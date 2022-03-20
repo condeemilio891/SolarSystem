@@ -20,6 +20,9 @@ export const ProductContainer= styled(animated.div)`
   margin-left:10px;
   margin-bottom: 15px;
   margin-top:8em;
+   opacity: ${({isOpen})=>(isOpen ? '100%' :'0')};
+    /* if is open is true show if not hide */
+    /* top:${({isOpen})=>(isOpen? '0':'-100%')}; */
 
   
 @media screen and (max-width: 480px){
