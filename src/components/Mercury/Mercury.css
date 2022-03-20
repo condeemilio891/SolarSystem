@@ -1,0 +1,40 @@
+@keyframes spin {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.mercury{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto 5rem 15rem auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+}
+.mercury:after {
+    position: static;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    border-radius: 50%;
+   
+}
+
+
+.mercury>div{
+    width:200%;
+    height:100%;
+    animation: spin 30s linear infinite;
+    background: url("../../assets/Images/mercuryMap.jpg");
+    background-size:cover
+}
+
