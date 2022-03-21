@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Container from "react-bootstrap/Container";
 import Video from "../assets/Videos/spaceVid.mp4";
+import Earth from "../components/Earth";
 import Mercury from "../components/Mercury/Mercury";
 import Venus from "../components/Venus/index"
 import "./SolarSystem.css"
@@ -22,6 +23,7 @@ function SolarSystem() {
           </video>
           <Venus/>
           <Mercury/>
+          <Earth/>
           
     </Container>
     </>

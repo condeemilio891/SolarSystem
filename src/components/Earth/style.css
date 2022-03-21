@@ -4,13 +4,13 @@
     }
 }
 
-.venus{
+.earth{
     width: 3rem;
     height: 3rem;
     position: absolute;
     top: 50%;
     bottom: 0;
-    left: 57%;
+    left: 60%;
     right: 0;
     margin:0;
     overflow: hidden;
@@ -18,7 +18,7 @@
     box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
     z-index: 0;
 }
-.venus:after {
+.earth:after {
     position: static;
     content: "";
     top: 0;
@@ -31,15 +31,15 @@
 }
 
 
-.venus>div{
+.earth>div{
     width:200%;
     height:100%;
     animation: spin 30s linear infinite;
-    background: url("../../assets/Images/venusMap.jpg");
+    background: url("../../assets/Images/earthMap.jpg");
     background-size:cover
 }
 
-.venus:hover{
+.earth:hover{
     cursor:pointer;
-    transform:scale(5)
+    transform:scale(7)
 }
