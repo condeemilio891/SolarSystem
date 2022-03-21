@@ -10,7 +10,7 @@ export const ProductContainer= styled(animated.div)`
   padding: 9.5em;
   background: #C7D2FE66;
   border-radius: 10px;
-  z-index: 1;
+  z-index: 1 !important;
  flex-wrap: wrap;
   backdrop-filter: opacity(20%);
   border: 2px solid transparent;

@@ -2,31 +2,30 @@ import React, {useState} from "react";
 import Container from "react-bootstrap/Container";
 import Video from "../assets/Videos/spaceVid.mp4";
 import Mercury from "../components/Mercury/Mercury";
-import GlassCard from "../components/GlassCard";
-import Hermes from "../assets/Images/Hermes.webp"
+import Venus from "../components/Venus/index"
 import "./SolarSystem.css"
-import { faMercury,faXmarkSquare } from "@fortawesome/free-solid-svg-icons";
 
-function SolarSystem() {
 
-  // const[isOpen, setIsOpen]=useState(false)
+class SolarSystem extends React.Component() {
 
-  // const toggle=()=>{
-  //     setIsOpen(!isOpen)
-  // }
-  
+  state={showing:false}
+
+  render(){
+   const {showing}=this.state
   return (
+    
+ 
     <>
     <Container id="SpaceBG" className="mt-0">
        <video className="videoTag" autoPlay loop muted>
             <source src={Video} type="video/mp4" />
           </video>
-
-          <Mercury/>
+          <Venus/>
+          <Mercury onClick={() => this.setState({ showing: !showing })}/>
           
     </Container>
     </>
-  );
+  )};
 }
 
 export default SolarSystem;
