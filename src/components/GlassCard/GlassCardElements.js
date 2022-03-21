@@ -3,7 +3,7 @@ import { animated} from "react-spring"
 
 
 export const ProductContainer= styled(animated.div)`
-
+   position:absolute;
   display: inline-block;
   height:10rem;
   width:40rem;
