@@ -6,26 +6,26 @@ import Venus from "../components/Venus/index"
 import "./SolarSystem.css"
 
 
-class SolarSystem extends React.Component() {
+function SolarSystem() {
 
-  state={showing:false}
+  // const[isOpen, setIsOpen]=useState(false)
 
-  render(){
-   const {showing}=this.state
+  // const toggle=()=>{
+  //     setIsOpen(!isOpen)
+  // }
+  
   return (
-    
- 
     <>
     <Container id="SpaceBG" className="mt-0">
        <video className="videoTag" autoPlay loop muted>
             <source src={Video} type="video/mp4" />
           </video>
           <Venus/>
-          <Mercury onClick={() => this.setState({ showing: !showing })}/>
+          <Mercury/>
           
     </Container>
     </>
-  )};
+  );
 }
 
 export default SolarSystem;
