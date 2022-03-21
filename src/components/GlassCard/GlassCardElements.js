@@ -10,7 +10,7 @@ export const ProductContainer= styled(animated.div)`
   padding: 9.5em;
   background: #C7D2FE66;
   border-radius: 10px;
-  z-index: 1;
+  z-index: 1 !important;
  flex-wrap: wrap;
   backdrop-filter: opacity(20%);
   border: 2px solid transparent;
@@ -23,6 +23,7 @@ export const ProductContainer= styled(animated.div)`
    opacity: ${({isOpen})=>(isOpen ? '100%' :'0')};
     /* if is open is true show if not hide */
     /* top:${({isOpen})=>(isOpen? '0':'-100%')}; */
+    display:${({isOpen})=>(isOpen? 'inline-block':'none')};
 
   
 @media screen and (max-width: 480px){
