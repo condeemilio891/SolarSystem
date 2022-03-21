@@ -5,14 +5,14 @@
 }
 
 .mercury{
-    width: 80px;
-    height: 80px;
+    width: 1.5rem;
+    height: 1.2rem;
     position: absolute;
-    top: 0;
+    top: 50%;
     bottom: 0;
-    left: 0;
+    left: 55%;
     right: 0;
-    margin: auto 5rem 15rem auto;
+    margin:0;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
@@ -38,3 +38,7 @@
     background-size:cover
 }
 
+.mercury:hover{
+    cursor:pointer;
+    transform:scale(10)
+}

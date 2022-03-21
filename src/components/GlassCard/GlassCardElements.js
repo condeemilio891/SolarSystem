@@ -23,6 +23,7 @@ export const ProductContainer= styled(animated.div)`
    opacity: ${({isOpen})=>(isOpen ? '100%' :'0')};
     /* if is open is true show if not hide */
     /* top:${({isOpen})=>(isOpen? '0':'-100%')}; */
+    display:${({isOpen})=>(isOpen? 'inline-block':'none')};
 
   
 @media screen and (max-width: 480px){
