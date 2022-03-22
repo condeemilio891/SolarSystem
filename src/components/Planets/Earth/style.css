@@ -1,0 +1,45 @@
+@keyframes spin {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.earth{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 62.5%;
+    right: 0;
+    margin:0;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+    z-index: 0;
+}
+.earth:after {
+    position: static;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    border-radius: 50%;
+   
+}
+
+
+.earth>div{
+    width:200%;
+    height:100%;
+    animation: spin 30s linear infinite;
+    background: url("../../../assets/Images/earthMap.jpg");
+    background-size:cover
+}
+
+.earth:hover{
+    cursor:pointer;
+    transform:scale(7)
+}

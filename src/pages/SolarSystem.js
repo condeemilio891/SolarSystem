@@ -1,21 +1,18 @@
 import React, {useState} from "react";
 import Container from "react-bootstrap/Container";
 import Video from "../assets/Videos/spaceVid.mp4";
-import Earth from "../components/Earth";
+import Earth from "../components/Planets/Earth";
 import Mercury from "../components/Mercury/Mercury";
 import Venus from "../components/Venus/index"
-import Mars from "../components/Mars/index"
+import Mars from "../components/Planets/Mars/index"
+import Jupiter from "../components/Planets/Jupiter";
 import "./SolarSystem.css"
 
 
 
 function SolarSystem() {
 
-  // const[isOpen, setIsOpen]=useState(false)
-
-  // const toggle=()=>{
-  //     setIsOpen(!isOpen)
-  // }
+ 
   
   return (
     <>
@@ -27,7 +24,7 @@ function SolarSystem() {
           <Mercury/>
           <Earth/>
           <Mars/>
-          
+          <Jupiter/>
           
     </Container>
    
