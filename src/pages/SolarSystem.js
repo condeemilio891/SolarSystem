@@ -4,7 +4,9 @@ import Video from "../assets/Videos/spaceVid.mp4";
 import Earth from "../components/Earth";
 import Mercury from "../components/Mercury/Mercury";
 import Venus from "../components/Venus/index"
+import Mars from "../components/Mars/index"
 import "./SolarSystem.css"
+
 
 
 function SolarSystem() {
@@ -24,8 +26,11 @@ function SolarSystem() {
           <Venus/>
           <Mercury/>
           <Earth/>
+          <Mars/>
+          
           
     </Container>
+   
     </>
   );
 }
