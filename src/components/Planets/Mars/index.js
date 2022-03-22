@@ -1,9 +1,9 @@
 import React from "react" 
-import GlassCard from "../GlassCard"
+import GlassCard from "../../GlassCard"
 import "./style.css"
 import { faMars} from "@fortawesome/free-solid-svg-icons"
 import { faXmarkSquare } from "@fortawesome/free-solid-svg-icons"
-import Ares from "../../assets/Images/Ares.webp"
+import Ares from "../../../assets/Images/Ares.webp"
 
 
 class Mars extends React.Component{

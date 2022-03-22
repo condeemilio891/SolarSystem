@@ -1,9 +1,9 @@
 import React from "react" 
-import GlassCard from "../GlassCard"
+import GlassCard from "../../GlassCard"
 import "./style.css"
 import { faEarth } from "@fortawesome/free-solid-svg-icons"
 import { faXmarkSquare } from "@fortawesome/free-solid-svg-icons"
-import Gaia from "../../assets/Images/Gaia.jpg"
+import Gaia from "../../../assets/Images/Gaia.jpg"
 
 class Earth extends React.Component{
     
