@@ -4,13 +4,13 @@
     }
 }
 
-.mercury{
-    width: 1.5rem;
-    height: 1.2rem;
+.jupiter{
+    width: 10rem;
+    height: 10rem;
     position: absolute;
     top: 50%;
     bottom: 0;
-    left: 55%;
+    left: 69%;
     right: 0;
     margin:0;
     overflow: hidden;
@@ -18,7 +18,7 @@
     box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
     z-index: 0;
 }
-.mercury:after {
+.jupiter:after {
     position: static;
     content: "";
     top: 0;
@@ -31,15 +31,15 @@
 }
 
 
-.mercury>div{
+.jupiter>div{
     width:200%;
     height:100%;
     animation: spin 30s linear infinite;
-    background: url("../../assets/Images/mercuryMap.jpg");
+    background: url("../../../assets/Images/jupiterMap.jpg");
     background-size:cover
 }
 
-.mercury:hover{
+.jupiter:hover{
     cursor:pointer;
-    transform:scale(10)
+    transform:scale(1.5)
 }

@@ -35,11 +35,11 @@
     width:200%;
     height:100%;
     animation: spin 30s linear infinite;
-    background: url("../../assets/Images/venusMap.jpg");
+    background: url("../../../assets/Images/venusMap.jpg");
     background-size:cover
 }
 
 .venus:hover{
     cursor:pointer;
-    transform:scale(10)
+    transform:scale(5)
 }
