@@ -3,7 +3,7 @@ import { animated} from "react-spring"
 
 
 export const ProductContainer= styled(animated.div)`
-
+   position:absolute;
   display: inline-block;
   height:10rem;
   width:40rem;
@@ -62,13 +62,16 @@ export const PlanetDescription = styled.h3`
 `
 
 export const PlanetImg = styled.img`
-        width: 7.5rem;
+        width: 8rem;
         height: auto;
-        border: 2px solid #000;
+        border: 3px solid #000;
         border-radius: 50%;
         position:absolute;
         top:0;
         right:2rem;
+        &:hover{
+           transform:scale(5)
+        }
     
     `
     export const ListGroupBody= styled.body `
@@ -77,7 +80,7 @@ export const PlanetImg = styled.img`
     padding:0;
     font-family: sans-serif;
     position: absolute;
-    top: 3rem;
+    top: 0rem;
     left: 4.5rem;
     width:20rem;
     height:10rem;
