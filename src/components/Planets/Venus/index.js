@@ -1,9 +1,9 @@
 import React from "react" 
-import GlassCard from "../GlassCard"
+import GlassCard from "../../GlassCard"
 import "./venus.css"
 import { faVenus } from "@fortawesome/free-solid-svg-icons"
 import { faXmarkSquare } from "@fortawesome/free-solid-svg-icons"
-import Aphrodite from "../../assets/Images/Aphrodite.webp"
+import Aphrodite from "../../../assets/Images/Aphrodite.webp"
 
 class Venus extends React.Component{
     
