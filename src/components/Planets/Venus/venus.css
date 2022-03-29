@@ -4,6 +4,11 @@
     }
 }
 
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+
 .venus{
     width: 3rem;
     height: 3rem;
@@ -17,6 +22,7 @@
     border-radius: 50%;
     box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
     z-index: 0;
+    animation: myOrbit 30s linear infinite;
 }
 .venus:after {
     position: static;
