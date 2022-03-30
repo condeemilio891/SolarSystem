@@ -12,8 +12,6 @@ class Mars extends React.Component{
   render(){
     const { showing } = this.state;
 return(
-    
-
     <>
 <div class="mars">
     
@@ -25,11 +23,9 @@ return(
                     title="Mars"
             icon={faMars}
             Xbutton={faXmarkSquare}
-            description=" Gaia (Terra) personified the earth. She Had Three types of children with Uranus, the personification of the sky.
-            12 Titans, 3 Cyclops and 3 Hecatoncheires (hundred handed). Uranus hated his children. His son, Chronus, a Titan, resented this and slashed him with a sickle.
-            The blood from Uranus fell on Mother Earth Creating the Giants, the Fates and the Tree Nymphs. Chronus Fearing his son would usurp him ate his children. 
-            Mother Earth saw this and adviced Rhea, Chronus's wife, to feed him a rock and hide Zeus. Chronus's Fears came true and Zeus became the ruler of living things.
-              "
+            description="This data is collected by the MAAS API. 
+            The high today is" 
+              
             planetImage={Ares}
             fact1="Surface is Covered by Iron Oxide"
             fact2="Summer Temperature is 63°F while Winter is -220°F"

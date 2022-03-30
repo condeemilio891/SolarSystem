@@ -4,24 +4,25 @@
     }
 }
 /* @-webkit-keyframes myOrbit {
-    from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    from { -webkit-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
 }
 
 @-moz-keyframes myOrbit {
-    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    from { -moz-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
 }
 
 @-o-keyframes myOrbit {
-    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    from { -o-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
 } */
 
-@keyframes myOrbit {
-    from { transform: rotate(0deg) translateX(50px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+@keyframes mercuryOrbit {
+    from { transform: rotate(0deg) translateX(25px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(25px) rotate(-360deg); }
 }
+
 
 
 .mercury{
@@ -37,7 +38,8 @@
     border-radius: 50%;
     box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
     z-index: 0;
-    animation: myOrbit 30s linear infinite;
+    animation: mercuryOrbit 5s linear infinite ;
+    
 }
 .mercury:after {
     position: static;
@@ -61,6 +63,11 @@
 }
 
 .mercury:hover{
+    animation-play-state: paused;
     cursor:pointer;
-    transform:scale(10)
+    border:White;
+    border-width: thick;
+}
+.mercury>div:hover{
+    transform:scale(10);
 }
