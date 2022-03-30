@@ -3,14 +3,27 @@
         transform: translateX(-50%);
     }
 }
-@keyframes rotation3d {
-    from {
-        transform: translateY(-50%) rotateX(-90deg) rotateY(0) rotateZ(0);
-    }
-    to {
-        transform: translateY(-50%) rotateX(-90deg) rotateY(360deg) rotateZ(0);
-    }
+/* @-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
 }
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+} */
+
+@keyframes mercuryOrbit {
+    from { transform: rotate(0deg) translateX(25px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(25px) rotate(-360deg); }
+}
+
+
 
 .mercury{
     width: 1.2rem;
@@ -18,13 +31,15 @@
     position: absolute;
     top: 50%;
     bottom: 0;
-    left: 55%;
+    left: 50%;
     right: 0;
     margin:0;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
     z-index: 0;
+    animation: mercuryOrbit 5s linear infinite ;
+    
 }
 .mercury:after {
     position: static;
@@ -42,12 +57,17 @@
 .mercury>div{
     width:200%;
     height:100%;
-    animation: spin 30s linear infinite;
+    animation: spin 3s linear infinite;
     background: url("../../../assets/Images/mercuryMap.jpg");
     background-size:cover
 }
 
 .mercury:hover{
+    animation-play-state: paused;
     cursor:pointer;
-    transform:scale(10)
+    border:White;
+    border-width: thick;
+}
+.mercury>div:hover{
+    transform:scale(10);
 }

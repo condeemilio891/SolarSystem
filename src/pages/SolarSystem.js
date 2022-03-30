@@ -12,18 +12,20 @@ import "./SolarSystem.css"
 
 function SolarSystem() {
 
-//  const [loading,setLoading]=useState(true);
-//  const [weather, setWeather]= useState([]);
-//  const [selectSol,setSelectedSol]=useState([])
-//  const API="http://marsweather.ingenology.com/v1/latest/"  
-//  useEffect(()=>{
+//   const [loading,setLoading]=useState(true);
+//   const [weather, setWeather]= useState([]);
+//   const [selectSol,setSelectedSol]=useState([])
+//   const API="https://api.maas2.jiinxt.com/"  
+//   useEffect(()=>{
 
-//   const fetchFromAPI=async()=>{
-//     const weather= await(await fetch( `https://cors-anywhere.herokuapp.com/${API}` )).json();
-//     console.log(weather)
+//    const fetchFromAPI=async()=>{
+//      const weather= await(await fetch( API )).json();
+//      console.log(weather)
+//      const marsMaxTemp= weather.max_temp
+//      const marsMin= weather.min_temp
 //   }
  
-//   fetchFromAPI()
+//    fetchFromAPI()
 //  }, [])
   return (
     <>
@@ -34,7 +36,7 @@ function SolarSystem() {
           <Venus/>
           <Mercury/>
           <Earth/>
-          <Mars/>
+        <Mars/>
           <Jupiter/>
           
     </Container>
