@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
-const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+const trans = (x, y, s) => `perspective(6000px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 const GlassCard = (props) => {
     const [aprops, set]= useSpring(()=>({xys:[0,0,1], config:{mass:10, tension:50, friction:50}}))
@@ -18,6 +18,7 @@ const GlassCard = (props) => {
       setIsOpen(!isOpen)
   }
     return (
+        <>
         <ProductContainer isOpen={isOpen}
         onMouseMove={({clientX: x, clientY: y})=>(set({xys: calc(x,y)}))}
         onMouseLeave= {()=> set({xys:[0,0,1]})}
@@ -58,7 +59,14 @@ const GlassCard = (props) => {
             <PlanetDescription>{props.description}</PlanetDescription>
 
             <PlanetImg src={props.planetImage}/>
+            <iframe style={{
+                position:'absolute', 
+                zIndex:1,borderRadius:"50%",
+                left:"100%",height:"25rem"}} src={props.nasaImage}></iframe>
         </ProductContainer>
+
+
+</>
     )
 }
 

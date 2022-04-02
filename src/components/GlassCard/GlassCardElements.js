@@ -70,7 +70,7 @@ export const PlanetImg = styled.img`
         top:0;
         right:2rem;
         &:hover{
-           transform:scale(5)
+           transform:scale(1.2)
         }
     
     `
