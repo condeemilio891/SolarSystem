@@ -36,8 +36,9 @@ function SolarSystem() {
           <Venus/>
           <Mercury/>
           <Earth/>
-        <Mars/>
+        {/* <Mars/> */}
           <Jupiter/>
+          {/* <iframe style={{position:'absolute', zIndex:1,}} src="https://solarsystem.nasa.gov/gltf_embed/2393"></iframe> */}
           
     </Container>
    
