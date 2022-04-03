@@ -1,11 +1,11 @@
 import React from "react" 
 import GlassCard from "../../GlassCard"
 import "./style.css"
+import "./saturnstyle.css"
 import { faXmarkSquare } from "@fortawesome/free-solid-svg-icons"
 import Zeus from "../../../assets/Images/Zeus.jpg"
 
-
-class Jupiter extends React.Component{
+class Saturn extends React.Component{
     
     state ={showing:false}
   render(){
@@ -14,15 +14,21 @@ return(
     
 
     <>
-<div class="jupiter">
+<div class="planet">
     
-    <div onClick={() => this.setState({ showing: !showing })} ></div>
+    <div onClick={() => this.setState({ showing: !showing })} >
+    
+    </div>
+    
+</div>
+<div class="ring">
   
 </div>
+<div class="up"></div>
 
 { showing 
                     ? <GlassCard
-                    title="Jupiter"
+                    title="Saturn"
             
             Xbutton={faXmarkSquare}
             description="Despite the distance Jupiter is the 4th brightest object in the sky.
@@ -50,4 +56,4 @@ return(
 }
 
 
-export default Jupiter
+export default Saturn
