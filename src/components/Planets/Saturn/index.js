@@ -1,6 +1,5 @@
 import React from "react" 
 import GlassCard from "../../GlassCard"
-import "./style.css"
 import "./saturnstyle.css"
 import { faXmarkSquare } from "@fortawesome/free-solid-svg-icons"
 import Zeus from "../../../assets/Images/Zeus.jpg"
@@ -14,17 +13,19 @@ return(
     
 
     <>
-<div class="planet">
+    <div class="saturnWrap">
     
-    <div onClick={() => this.setState({ showing: !showing })} >
+<div class="saturn">
+    
+    <div  >
     
     </div>
     
 </div>
-<div class="ring">
+<div class="ring"/>
   
-</div>
-<div class="up"></div>
+
+<div class="coverUp"></div>
 
 { showing 
                     ? <GlassCard
@@ -50,6 +51,7 @@ return(
             fact6= "Due to its size it pulls in Asteroids"/>
                     : null
                 }
+                </div>
 </>
 )
   }
