@@ -2,7 +2,7 @@ import React from "react"
 import GlassCard from "../../GlassCard"
 import "./saturnstyle.css"
 import { faXmarkSquare } from "@fortawesome/free-solid-svg-icons"
-import Zeus from "../../../assets/Images/Zeus.jpg"
+import Chronus from "../../../assets/Images/cronusPic.avif"
 
 class Saturn extends React.Component{
     
@@ -34,23 +34,17 @@ return(
                     title="Saturn"
             
             Xbutton={faXmarkSquare}
-            description="Despite the distance Jupiter is the 4th brightest object in the sky.
-                        Named after the Greek God Zeus or Jupiter due to its immense diameter.
-                        Zeus killed his father Chronus after Chronus tried to eat him.
-                        He then Punished Chronus by making him swing the scythe of time.
-                        Jupiters Galilean moons '('IO, Europa, Ganymede and Callisto')' are sometimes more of interest to science today than the planet itself.
-                        Ganymede is bigger than mercury and Europa may contain an ocean underneath the surface. 
-                        Scientists predict that the iron core, energy source combined with a the geology of rocky mantle could
-                        house could create alien life.
+            description="Usually negativly portrayed for the tyrannical action of eating his children, Chronus at one point ushered a golden age for humanity.
+            Humans lived long lives and on mount Olympus, Peacefully, with the Titans. 
               "
-            planetImage={Zeus}
-            nasaImage="https://solarsystem.nasa.gov/gltf_embed/2375"
-            fact1="Jupiter is 2.5x bigger than all the planets but 1/1,000 of the Sun"
-            fact2="If Jupiter were 13x as massive it would become a Brown Dwarf"
-            fact3= "79 Moons. 4 Largest: IO, Europa, Ganymede and Callisto"
-            fact4= "A Day is 9 hours a year is 11.8 earth years"
-            fact5= "Jupiter's Great Red Spot is a gigantic storm 2x bigger than earth and over a centery old."
-            fact6= "Due to its size it pulls in Asteroids"/>
+            planetImage={Chronus}
+            nasaImage="https://solarsystem.nasa.gov/gltf_embed/2355"
+            fact1="Saturn is less dense than water due to its hydrogen composition"
+            fact2=" Saturn's north pole is the shape of a hexagon. It looks liks a storm that rotates with the planet instead of the atmosphere"
+            fact3= "One day is 10 hours, one earth year is 29 years"
+            fact4= "Scientists predict its outer core is liquid Hydrogen and its inner core is iron"
+            fact5= "At least 82 moons. Titan is the only moon in the solar system with a thick atmosphere. It also has lakes."
+            fact6= "Has rings composed of ice, asteroids and pieces of moon."/>
             </>
                     : null
                 }
