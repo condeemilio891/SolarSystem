@@ -13,11 +13,11 @@ return(
     
 
     <>
-    <div class="saturnWrap">
+    <div class="saturnWrap" >
     
 <div class="saturn">
     
-    <div  >
+    <div onClick={() => this.setState({ showing: !showing })} >
     
     </div>
     
@@ -26,9 +26,11 @@ return(
   
 
 <div class="coverUp"></div>
-
+</div>
 { showing 
-                    ? <GlassCard
+                    ?
+                    <> 
+                    <GlassCard
                     title="Saturn"
             
             Xbutton={faXmarkSquare}
@@ -49,9 +51,10 @@ return(
             fact4= "A Day is 9 hours a year is 11.8 earth years"
             fact5= "Jupiter's Great Red Spot is a gigantic storm 2x bigger than earth and over a centery old."
             fact6= "Due to its size it pulls in Asteroids"/>
+            </>
                     : null
                 }
-                </div>
+               
 </>
 )
   }
