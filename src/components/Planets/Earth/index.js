@@ -17,10 +17,12 @@ return(
 <div class="earth">
     
     <div onClick={() => this.setState({ showing: !showing })} ></div>
- 
+
 </div>
 { showing 
-                    ? <GlassCard
+                    ?
+                    <>
+                    <GlassCard
                     title="Earth"
             icon={faEarth}
             Xbutton={faXmarkSquare}
@@ -29,14 +31,21 @@ return(
             The blood from Uranus fell on Mother Earth Creating the Giants, the Fates and the Tree Nymphs. Chronus Fearing his son would usurp him ate his children. 
             Mother Earth saw this and adviced Rhea, Chronus's wife, to feed him a rock and hide Zeus. Chronus's Fears came true and Zeus became the ruler of living things.
               "
+            nasaImage="https://solarsystem.nasa.gov/gltf_embed/2393"
             planetImage={Gaia}
             fact1="Surface is 71% covered by water"
             fact2="The Earths magnetic field forms a magnetosphere which protects us from the solar wind"
             fact3= "The temperature of the inner core of the earth is similar to the sun but the immense presure keeps it solid"
             fact4= "the temperature difference within the outer core causes convection currents. Powering Earth's magnetic Field"
             fact5= "Largest and densest Terrestrial planet"
-            fact6= "Tilted on it's axis by 24.3° Causing Seasons"/>
+            fact6= "Tilted on it's axis by 24.3° Causing Seasons"/> 
+
+       
+
+       
+            </>
                     : null
+                
                 }
 </>
 )

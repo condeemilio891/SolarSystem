@@ -63,14 +63,14 @@ export const PlanetDescription = styled.h3`
 
 export const PlanetImg = styled.img`
         width: 8rem;
-        height: auto;
+        height: 10rem;
         border: 3px solid #000;
         border-radius: 50%;
         position:absolute;
         top:0;
         right:2rem;
         &:hover{
-           transform:scale(5)
+           transform:scale(1.2)
         }
     
     `

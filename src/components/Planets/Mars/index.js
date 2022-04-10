@@ -46,17 +46,26 @@ return(
                     title="Mars"
             icon={faMars}
             Xbutton={faXmarkSquare}
-            description="This data is collected by the MAAS API. 
-            The high and low today are" 
+            description="Mars is the God of War
+             so the planet gets its name from red the rust or iron oxide on the planet. 
+             Surviving Mars will not be easy but recent discoveres say its possible.
+             Humans will need water, food, oxygen and shelter from radiation to survive. 
+             Water exists on Mars as Ice and flowing water. NASA
+              plans to extract water from the soil.
+              NASA is working on printing food using protiens, starches and fats. 
+              The numberous volcano vents burrowed underneath the surface can provide shelter from radiation.
+              Finally a  Mars Oxygen In-Situ Resource Utilization Experiment or MOXIE will be used to create O2"
+            
               
             planetImage={Ares}
+            nasaImage="https://solarsystem.nasa.gov/gltf_embed/2372"
             fact1=" Below are the high and low temperatures '(Celsius) '
-            on mars according to the MAAS API"
+            on Mars according to the MAAS API"
             fact2={weatherMax}
             fact3= {weatherMin}
-            fact4= "The biggest crater on Mars is Borealis Basin. It is 5300 miles from end to end and covers 40% of planet’s surface."
-            fact5= "Polar Caps made of dry ice (frozen CO2)"
-            fact6= "A day on Mars lasts 24 hours and 37 minutes."/>
+            fact4= "Mars has similarities to Earth. A similar hour day, Seasons, due to the tilt,(but they are twice as long) and polar ice caps(though they are made of dry ice or CO2)"
+            fact5= "Mars has two moons Phobos(fear) and Deimos(panic) named after the dogs of the God of War, Ares "
+            fact6= "NASA has 2 rovers, 1 lander and 1 helicopter on Mars"/>
                     : null
                 }
 </>
