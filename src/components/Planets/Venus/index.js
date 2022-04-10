@@ -31,6 +31,7 @@ return(
             Carbon Dioxide and Sulfur retain so much heat that lead melts when it enters Venus's atmosphere.  
               "
             planetImage={Aphrodite}
+            nasaImage="https://solarsystem.nasa.gov/gltf_embed/2343"
             fact1="Longest Day in the Solar System 245 earth days 1 year on Venus is 225 days"
             fact2="Temperature 864°F Hottest Planet in the Solar System. "
             fact3= "The atmosphere is  92x stronger than Earths."

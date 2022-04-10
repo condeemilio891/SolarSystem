@@ -6,7 +6,9 @@ import Mercury from "../components/Planets/Mercury/Mercury";
 import Venus from "../components/Planets/Venus/index"
 import Mars from "../components/Planets/Mars/index"
 import Jupiter from "../components/Planets/Jupiter";
+import Saturn from "../components/Planets/Saturn";
 import "./SolarSystem.css"
+
 
 
 
@@ -36,8 +38,9 @@ function SolarSystem() {
           <Venus/>
           <Mercury/>
           <Earth/>
-        <Mars/>
+        {/* <Mars/> */}
           <Jupiter/>
+          <Saturn/>
           
     </Container>
    
