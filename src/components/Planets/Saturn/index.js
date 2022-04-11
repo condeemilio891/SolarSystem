@@ -22,7 +22,7 @@ return(
     </div>
     
 </div>
-<div class="ring"/>
+<div class="saturnRing"/>
   
 
 <div class="coverUp"></div>
