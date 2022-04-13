@@ -1,0 +1,89 @@
+@keyframes Uspin {
+    to {
+        transform: translateX(-50%);
+    }
+}
+@keyframes uranusOrbit {
+    from { transform: rotate(0deg) translateX(450px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(450px) rotate(-360deg); }
+  }
+  
+
+  .uranusWrap{
+    height: 120px;
+    width: 120px;
+    position:absolute;
+    left:40%;
+    top:30%;
+    animation: uranusOrbit 60s linear infinite
+}
+
+.uranus{
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 80%;
+    right: 0;
+    margin:0;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+    z-index: 0;
+}
+.uranus:after {
+    position: static;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    border-radius: 50%;
+   
+}
+
+
+.uranus>div{
+    width:200%;
+    height:100%;
+    animation: Uspin 30s linear infinite;
+    background: url("../../../assets/Images/uranusMap.jpg");
+    background-size:cover
+}
+
+.uranus:hover{
+    cursor:pointer;
+    
+}
+.uranusRing {
+    width: 200px;
+    height:40px;
+    background:none;
+    position: absolute;
+    top: 70%;
+    bottom: 0%;
+    left: 40%;
+    right: 0%;
+    z-index: 1;
+    border:10px solid white;
+    border-radius: 50%;
+    transform:rotate(85deg)
+  
+  }
+  .uranusCoverUp{
+    width:6.3rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 87%;
+    bottom: 0;
+    left: 108%;
+    right: 0;
+    border-radius:100px 100px 0 0;
+    transform: rotate(90deg);
+    background:url(../../../assets/Images/uranusMap.jpg);
+    /* overflow: hidden; */
+    z-index:1
+
+  }
