@@ -3,6 +3,10 @@
         transform: translateX(-50%);
     }
 }
+@keyframes marsOrbit {
+    from { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
 
 .mars{
     width: 2rem;
@@ -10,13 +14,14 @@
     position: absolute;
     top: 50%;
     bottom: 0;
-    left: 65%;
+    left: 50%;
     right: 0;
     margin:0;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
     z-index: 0;
+    animation:marsOrbit 30s linear infinite;
 }
 .mars:after {
     position: static;
