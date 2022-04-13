@@ -13,16 +13,16 @@ return(
     
 
     <>
-    <div class="saturnWrap" >
+    <div class="saturnWrap" onClick={() => this.setState({ showing: !showing })}>
     
 <div class="saturn">
     
-    <div onClick={() => this.setState({ showing: !showing })} >
+    <div  >
     
     </div>
     
 </div>
-<div class="ring"/>
+<div class="saturnRing"/>
   
 
 <div class="coverUp"></div>

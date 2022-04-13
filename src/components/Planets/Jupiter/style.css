@@ -3,20 +3,25 @@
         transform: translateX(-50%);
     }
 }
+@keyframes jupiterOrbit {
+    from { transform: rotate(0deg) translateX(280px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(280px) rotate(-360deg); }
+  }
 
 .jupiter{
     width: 10rem;
     height: 10rem;
     position: absolute;
-    top: 50%;
+    top: 40%;
     bottom: 0;
-    left: 69%;
+    left: 43%;
     right: 0;
     margin:0;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
     z-index: 0;
+    animation: jupiterOrbit 60s linear infinite;
 }
 .jupiter:after {
     position: static;
