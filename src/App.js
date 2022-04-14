@@ -1,13 +1,18 @@
 import React from "react";
-import { HashRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter as Router, Route,Routes } from "react-router-dom";
 import SolarSystem from "./pages/SolarSystem";
+import DwarfPlanets from "./pages/DwarfPlanets";
 
 
 
 function App() {
   return (
-    <SolarSystem/>
-    
+    <BrowserRouter>
+      <Routes>
+          <Route path= "/" element={<SolarSystem/>}/>
+          <Route path= "dwarf" element={<DwarfPlanets/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
