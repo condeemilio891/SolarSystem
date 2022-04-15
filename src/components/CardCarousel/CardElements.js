@@ -1,5 +1,6 @@
 
 import styled from "styled-components";
+import CarouselSpinner from './CarouselSpinner'
 
 
 export const CarouselContainer= styled.div`
@@ -51,3 +52,11 @@ color: white;
   top: 15px;
 `
 
+export const Cimg= styled.img`
+height: 50%;
+width:100%;
+overflow:hidden;
+position:relative;
+top:15%;
+
+`
