@@ -1,6 +1,6 @@
 import React from 'react'
-import { CarouselContainer,CarouselCard,CTitle } from './CardElements'
-
+import { CarouselContainer,CarouselCard,CTitle, Cimg } from './CardElements'
+import PlutoB from "../../assets/Images/plutoback.jpg"
 
 
 const DwarfPlanetCards = () => {
@@ -8,6 +8,7 @@ const DwarfPlanetCards = () => {
    <CarouselContainer>
        <CarouselCard>
             <CTitle>Pluto</CTitle>
+            <Cimg src={PlutoB}/>
        </CarouselCard>
        <CarouselCard>
             <CTitle>Eres</CTitle>
