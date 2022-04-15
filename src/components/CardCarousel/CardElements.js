@@ -1,36 +1,45 @@
+
 import styled from "styled-components";
+
 
 export const CarouselContainer= styled.div`
  position: absolute;
-  height: 300px;
-  width: 600px;
+  height:1000px;
+  width: 1000px;
   top: 60px;
-  left: calc(50% - 300px);
+  left: calc(50% - 500px);
   display: flex;
 `
 
 
 export const CarouselCard= styled.div`
     display: flex;
-    height: 280px;
-    width: 200px;
+    height: 600px;
+    width: 800px;
     background-color: #17141d;
     border-radius: 10px;
     box-shadow: -1rem 0 3rem #000;
-  /*   margin-left: -50px; */
+    margin-left: -20px;
     transition: 0.4s ease-out;
     position: relative;
     left: 0px;
-    &:not(:first-child){
-        margin-left:50px
     }
     &:hover{
         transform:translateY(-20px);
+        transform: scale(1.1);
         transition:0.4s ease-out;
         position:relative;
         left:50px;
         transition:0.4s ease-out;
+        position:relative;
+        z-index:2;
     }
+    
+   &:hover ~& {
+        position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+    }  
   
 `
 
@@ -41,3 +50,4 @@ color: white;
   left: 20px;
   top: 15px;
 `
+

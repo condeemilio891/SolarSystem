@@ -7,16 +7,19 @@ const DwarfPlanetCards = () => {
   return (
    <CarouselContainer>
        <CarouselCard>
-            <CTitle>Card 1</CTitle>
+            <CTitle>Pluto</CTitle>
        </CarouselCard>
        <CarouselCard>
-            <CTitle>Card 2</CTitle>
+            <CTitle>Eres</CTitle>
        </CarouselCard>
        <CarouselCard>
-            <CTitle>Card 3</CTitle>
+            <CTitle>Ceres</CTitle>
        </CarouselCard>
        <CarouselCard>
-            <CTitle>Card 4</CTitle>
+            <CTitle>Makemake</CTitle>
+       </CarouselCard>
+       <CarouselCard>
+            <CTitle>Haumea</CTitle>
        </CarouselCard>
    </CarouselContainer>
   )
