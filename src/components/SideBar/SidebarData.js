@@ -1,20 +1,20 @@
 import React from 'react'
 
-import RiSunFill from "react-icons/ri"
-import GiDwarfFace from 'react-icons/gi'
+import * as RiIcons from 'react-icons/ri'
+import * as GiIcons from 'react-icons/gi'
 
 export const SideBarData=[
 
     {
-        title:'Solar-System',
+        title:'Solar System',
         path:'/',
-        icon: <RiSunFill/>,
+        icon: <RiIcons.RiSunFill/>,
         cName:'nav-text'
     },
     {
-        title:'Solar-System',
+        title:'Dwarf Planets',
         path:'/dwarf',
-        icon: <GiDwarfFace/>,
+        icon: <GiIcons.GiDwarfFace/>,
         cName:'nav-text'
     }
 ]
