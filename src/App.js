@@ -1,16 +1,16 @@
 import React from "react";
-import Navbar from "./components/NavBar/Navbar";
 import { BrowserRouter, HashRouter as Router, Route,Routes } from "react-router-dom";
 import SolarSystem from "./pages/SolarSystem";
 import DwarfPlanets from "./pages/DwarfPlanets";
+import Sidebar from "./components/SideBar/Navbar";
 
 
 
 function App() {
   return (
     <>
-    <Navbar/>
     <BrowserRouter>
+    <Sidebar/>
       <Routes>
           <Route path= "/" element={<SolarSystem/>}/>
           <Route path= "dwarf" element={<DwarfPlanets/>}/>
