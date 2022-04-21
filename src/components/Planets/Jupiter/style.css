@@ -4,8 +4,8 @@
     }
 }
 @keyframes jupiterOrbit {
-    from { transform: rotate(0deg) translateX(280px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(280px) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(120%) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(120%) rotate(-360deg); }
   }
 
 .jupiter{

@@ -4,8 +4,8 @@
     }
 }
 @keyframes neptuneOrbit {
-    from { transform: rotate(0deg) translateX(500px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(500px) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(350%) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(350%) rotate(-360deg); }
   }
   
 

@@ -4,8 +4,8 @@
     }
 }
 @keyframes uranusOrbit {
-    from { transform: rotate(0deg) translateX(450px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(450px) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(300%) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(300%) rotate(-360deg); }
   }
   
 
