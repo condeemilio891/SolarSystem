@@ -5,8 +5,8 @@
 }
 
 @keyframes venusOrbit {
-    from { transform: rotate(0deg) translateX(58px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(58px) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(150%) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150%) rotate(-360deg); }
 }
 
 .venus{

@@ -5,8 +5,8 @@
   }
 }
 @keyframes saturnOrbit {
-  from { transform: rotate(0deg) translateX(300px) rotate(0deg); }
-  to   { transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+  from { transform: rotate(0deg) translateX(250%) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(250%) rotate(-360deg); }
 }
 
 
