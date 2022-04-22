@@ -5,16 +5,16 @@
   }
 }
 @keyframes saturnOrbit {
-  from { transform: rotate(0deg) translateX(250%) rotate(0deg); }
-  to   { transform: rotate(360deg) translateX(250%) rotate(-360deg); }
+  from { transform: rotate(0deg) translateX(200%) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(200%) rotate(-360deg); }
 }
 
 
 
 
 .saturnWrap{
-  height:150px;
- width:150px;
+  height:10%;
+ width:10%;
  animation: saturnOrbit 30s linear infinite;
  top:35%;
  bottom:0%;
@@ -30,8 +30,8 @@
   cursor:pointer;
 }
   .saturn{
-    width: 9rem;
-    height: 9rem;
+    width: 50%;
+    height: 70%;
     position: absolute;
     top: 45%;
     bottom: 0;
@@ -54,8 +54,8 @@
   }
   
   .saturnRing {
-    width: 400px;
-    height: 305px;
+    width: 175%;
+    height: 100%;
     /* border: solid 50px #b8b08d; */
     background: -moz-radial-gradient(center, ellipse cover,  rgba(24,19,25,0) 0%, rgba(53,52,51,0) 34%, rgba(55,54,52,1) 36%, rgba(56,55,53,1) 37%, rgba(68,67,66,1) 38%, rgba(56,55,53,1) 39%, rgba(68,67,66,1) 40%, rgba(56,55,53,1) 41%, rgba(87,77,76,1) 42%, rgba(87,77,76,1) 44%, rgba(113,110,103,1) 46%, rgba(113,110,103,1) 48%, rgba(113,98,93,1) 49%, rgba(113,98,93,1) 51%, rgba(122,115,105,1) 52%, rgba(113,98,93,1) 53%, rgba(113,98,93,1) 54%, rgba(122,115,105,1) 55%, rgba(106,99,89,1) 56%, rgba(106,99,89,1) 58%, rgba(79,76,76,0) 60%, rgba(65,64,70,1) 61%, rgba(65,64,70,1) 62%, rgba(90,85,89,1) 63%, rgba(78,74,73,1) 65%, rgba(78,73,74,1) 67%, rgba(78,73,74,0) 68%, rgba(78,73,75,1) 69%, rgba(78,73,75,1) 70%, rgba(78,73,76,0) 71%, rgba(77,72,76,0) 72%, rgba(24,19,25,0) 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(24,19,25,0)), color-stop(34%,rgba(53,52,51,0)), color-stop(36%,rgba(55,54,52,1)), color-stop(37%,rgba(56,55,53,1)), color-stop(38%,rgba(68,67,66,1)), color-stop(39%,rgba(56,55,53,1)), color-stop(40%,rgba(68,67,66,1)), color-stop(41%,rgba(56,55,53,1)), color-stop(42%,rgba(87,77,76,1)), color-stop(44%,rgba(87,77,76,1)), color-stop(46%,rgba(113,110,103,1)), color-stop(48%,rgba(113,110,103,1)), color-stop(49%,rgba(113,98,93,1)), color-stop(51%,rgba(113,98,93,1)), color-stop(52%,rgba(122,115,105,1)), color-stop(53%,rgba(113,98,93,1)), color-stop(54%,rgba(113,98,93,1)), color-stop(55%,rgba(122,115,105,1)), color-stop(56%,rgba(106,99,89,1)), color-stop(58%,rgba(106,99,89,1)), color-stop(60%,rgba(79,76,76,0)), color-stop(61%,rgba(65,64,70,1)), color-stop(62%,rgba(65,64,70,1)), color-stop(63%,rgba(90,85,89,1)), color-stop(65%,rgba(78,74,73,1)), color-stop(67%,rgba(78,73,74,1)), color-stop(68%,rgba(78,73,74,0)), color-stop(69%,rgba(78,73,75,1)), color-stop(70%,rgba(78,73,75,1)), color-stop(71%,rgba(78,73,76,0)), color-stop(72%,rgba(77,72,76,0)), color-stop(100%,rgba(24,19,25,0)));
@@ -65,10 +65,10 @@
     background: radial-gradient(ellipse at center,  rgba(24,19,25,0) 0%,rgba(53,52,51,0) 34%,rgba(55,54,52,1) 36%,rgba(56,55,53,1) 37%,rgba(68,67,66,1) 38%,rgba(56,55,53,1) 39%,rgba(68,67,66,1) 40%,rgba(56,55,53,1) 41%,rgba(87,77,76,1) 42%,rgba(87,77,76,1) 44%,rgba(113,110,103,1) 46%,rgba(113,110,103,1) 48%,rgba(113,98,93,1) 49%,rgba(113,98,93,1) 51%,rgba(122,115,105,1) 52%,rgba(113,98,93,1) 53%,rgba(113,98,93,1) 54%,rgba(122,115,105,1) 55%,rgba(106,99,89,1) 56%,rgba(106,99,89,1) 58%,rgba(79,76,76,0) 60%,rgba(65,64,70,1) 61%,rgba(65,64,70,1) 62%,rgba(90,85,89,1) 63%,rgba(78,74,73,1) 65%,rgba(78,73,74,1) 67%,rgba(78,73,74,0) 68%,rgba(78,73,75,1) 69%,rgba(78,73,75,1) 70%,rgba(78,73,76,0) 71%,rgba(77,72,76,0) 72%,rgba(24,19,25,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00181319', endColorstr='#00181319',GradientType=1 );
     /* border-radius: 50%; */
-    position: absolute;
-    top: 0%;
-    bottom: 100%;
-    left: 0%;
+    position: relative;
+    top: 26%;
+    bottom: 80%;
+    left: 15%;
     right: 0%;
     z-index: 1;
     transform: rotate3d(1, 0, 0, 75deg); 
@@ -76,15 +76,15 @@
   }
   
   .coverUp {
-    width:9rem;
-    height: 70px;
+    width:48%;
+    height: 10%;
     position: absolute;
-    top: 45%;
+    top: 63%;
     bottom: 0;
-    left: 79%;
+    left: 80%;
     right: 0;
-    border-radius:100px 100px 0 0;
-    background:url(../../../assets/Images/saturnMap.jpg);
+    border-radius:120px 120px 0 0;
+    background:#B89C72;
     overflow: hidden;
     z-index:2
    

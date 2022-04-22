@@ -16,5 +16,6 @@ export const SideBarData=[
         path:'/dwarf',
         icon: <GiIcons.GiDwarfFace/>,
         cName:'nav-text'
-    }
+    },
+  
 ]
