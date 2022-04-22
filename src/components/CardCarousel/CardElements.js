@@ -60,3 +60,11 @@ position:relative;
 top:15%;
 
 `
+
+export const DwarfDesc=styled.p`
+color:white;
+position: absolute;
+top:80%;
+padding-left:10px;
+padding-right: 20px;
+`
