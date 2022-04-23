@@ -4,15 +4,15 @@
     }
 }
 @keyframes marsOrbit {
-    from { transform: rotate(0deg) translateX(100px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(400%) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(400%) rotate(-360deg); }
 }
 
 .mars{
     width: 2rem;
     height: 2rem;
     position: absolute;
-    top: 50%;
+    top: 77%;
     bottom: 0;
     left: 50%;
     right: 0;
@@ -46,5 +46,6 @@
 
 .mars:hover{
     cursor:pointer;
-    transform:scale(7)
+    transform:scale(7);
+    animation-play-state: paused;
 }
