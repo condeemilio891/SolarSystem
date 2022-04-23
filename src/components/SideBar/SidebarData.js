@@ -6,7 +6,7 @@ import * as GiIcons from 'react-icons/gi'
 export const SideBarData=[
 
     {
-        title:'Solar System',
+        title:'Planets',
         path:'/',
         icon: <RiIcons.RiSunFill/>,
         cName:'nav-text'

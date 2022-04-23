@@ -3,6 +3,7 @@ import { BrowserRouter, HashRouter as Router, Route,Routes } from "react-router-
 import SolarSystem from "./pages/SolarSystem";
 import DwarfPlanets from "./pages/DwarfPlanets";
 import Sidebar from "./components/SideBar/Navbar";
+import Canvas from "./components/Canvas/Canvas";
 
 
 
@@ -14,7 +15,8 @@ function App() {
       <Routes>
           <Route path= "/" element={<SolarSystem/>}/>
           <Route path= "dwarf" element={<DwarfPlanets/>}/>
-      </Routes>
+          {/* <Route path="canvas" element={<Canvas/>}/> */}
+       </Routes>
     </BrowserRouter>
     </>
   );
