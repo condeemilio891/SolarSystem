@@ -19,8 +19,8 @@
 } */
 
 @keyframes mercuryOrbit {
-    from { transform: rotate(0deg) translateX(25px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(25px) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(125%) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(125%) rotate(-360deg); }
 }
 
 
@@ -29,7 +29,7 @@
     width: 1.2rem;
     height: 1.2rem;
     position: absolute;
-    top: 50%;
+    top: 78%;
     bottom: 0;
     left: 50%;
     right: 0;

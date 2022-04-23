@@ -5,15 +5,15 @@
 }
 
 @keyframes venusOrbit {
-    from { transform: rotate(0deg) translateX(58px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(58px) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(150%) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150%) rotate(-360deg); }
 }
 
 .venus{
     width: 3rem;
     height: 3rem;
     position: absolute;
-    top: 50%;
+    top: 77%;
     bottom: 0;
     left: 50%;
     right: 0;
@@ -22,7 +22,7 @@
     border-radius: 50%;
     box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
     z-index: 0;
-    animation: venusOrbit 40s linear infinite;
+    animation: venusOrbit 15s linear infinite;
 }
 .venus:after {
     position: static;
@@ -48,5 +48,5 @@
 .venus:hover{
     animation-play-state: paused;
     cursor:pointer;
-    transform:scale(5)
+    transform:scale(5);
 }

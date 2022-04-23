@@ -57,7 +57,7 @@ export const PlanetDescription = styled.h3`
     font-size: 20px;
     position: absolute;
     left:45%;
-    color:#081448;
+    color: white;
 
 `
 
