@@ -68,3 +68,16 @@ top:80%;
 padding-left:10px;
 padding-right: 20px;
 `
+export const  DwarfButton = styled.button`
+background-color: black;
+color: white;
+font-size: 20px;
+padding: 10px 10px;
+border-radius: 5px;
+margin: 10px 0px;
+cursor: pointer;
+ &:hover{
+   background: white;
+   color:black;
+ }
+`;

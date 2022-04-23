@@ -4,8 +4,8 @@
     }
 }
 @keyframes uranusOrbit {
-    from { transform: rotate(0deg) translateX(300%) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(300%) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(400%) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(400%) rotate(-360deg); }
   }
   
 
@@ -14,13 +14,16 @@
     width: 120px;
     position:absolute;
     left:40%;
-    top:30%;
+    top:70%;
     animation: uranusOrbit 60s linear infinite
+}
+.uranusWrap:hover{
+    animation-play-state: paused;
 }
 
 .uranus{
-    width: 7rem;
-    height: 7rem;
+    width: 75%;
+    height: 75%;
     position: absolute;
     top: 50%;
     bottom: 0;
@@ -55,16 +58,17 @@
 
 .uranus:hover{
     cursor:pointer;
+    animation-play-state: paused;
     
 }
 .uranusRing {
-    width: 200px;
-    height:40px;
+    width: 125%;
+    height:10%;
     background:none;
     position: absolute;
     top: 70%;
     bottom: 0%;
-    left: 40%;
+    left:50%;
     right: 0%;
     z-index: 1;
     border:10px solid white;
@@ -73,12 +77,12 @@
   
   }
   .uranusCoverUp{
-    width:6.3rem;
-    height: 1.5rem;
+    width:75%;
+    height: 20%;
     position: absolute;
-    top: 87%;
+    top: 78%;
     bottom: 0;
-    left: 108%;
+    left: 95%;
     right: 0;
     border-radius:100px 100px 0 0;
     transform: rotate(90deg);
