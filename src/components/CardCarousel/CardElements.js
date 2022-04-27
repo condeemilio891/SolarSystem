@@ -13,7 +13,7 @@ export const CarouselContainer= styled.div`
 `
 
 
-export const CarouselCard= styled.div`
+export const CarouselCard= styled.div `
     display: flex;
     height: 600px;
     width: 800px;
@@ -36,7 +36,7 @@ export const CarouselCard= styled.div`
         z-index:2;
     }
     
-   &:hover ~& {
+   &:hover ~ & {
         position: relative;
   left: 50px;
   transition: 0.4s ease-out;
