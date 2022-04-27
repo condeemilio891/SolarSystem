@@ -4,7 +4,7 @@ import SolarSystem from "./pages/SolarSystem";
 import DwarfPlanets from "./pages/DwarfPlanets";
 import Sidebar from "./components/SideBar/Navbar";
 import Canvas from "./components/Canvas/Canvas";
-import MarsWeather from "./pages/MarsWeather";
+import MarsWeather from "./components/MarsWeather/MarsWeather";
 
 
 

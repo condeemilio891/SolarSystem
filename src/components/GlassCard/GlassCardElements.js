@@ -131,7 +131,8 @@ export const PlanetImg = styled.img`
           background: #D7C0AD;
        };
        &:hover{
-           transform: scale()(1.06);
+           transform: scale(1.06);
            background: #fff0f3;
+           color:black;
        }
     `
