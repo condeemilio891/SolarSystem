@@ -4,9 +4,9 @@ import styled from "styled-components";
 
 
 export const RCard = styled.div`
-
-    height:30rem;
-    width:25rem;
+    position:relative;
+    height:35rem;
+    width:35rem;
     background-color:black;
     transform:scale(0.7);
     border-radius:8px;
@@ -105,10 +105,37 @@ bottom:0;
 background-size: 100% 100%;
 border-radius: 8px;
 transition: 1s;
-    transform:scale(0.5,0.35) translateY(-650px);
+    transform:scale(0.5,0.35) translateY(-850px);
     border-radius:50%;
     background-size: 100% 150%;
     background-position: 0 -25px;
 
+`
+
+export const PlayButton=styled.button`
+
+  width: 50px;
+  height: 50px;
+  background: red;
+  border-radius: 50%;
+position:absolute;
+bottom:1%;
+left:1%;
+cursor:pointer;
+
+`
+
+export const RPlayDescription=styled.p`
+
+position:absolute;
+    bottom:2%;
+    font-weight:bolder ;
+    color:#949594;
+    line-height:28px;
+    font-size:18px;
+    text-align:right;
+    font-style:italic ;
+    margin-right:2px;
+    margin-left:10px;
 `
 
