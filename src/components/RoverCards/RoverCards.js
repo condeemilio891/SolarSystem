@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import useSound from 'use-sound'
-import { RCard,RPhoto,RInfoSection,RName,RDate,Rdivider,RDescription, RButton, RPhoto2,PlayButton,RPlayDescription
+import { RCard,RPhoto,RInfoSection,RName,RDate,Rdivider,RDescription, RButton, RPhoto2,PlayButton,RPlayDescription, Rdivider2
  } from './RoverCardElements'
 import * as BsIcons from "react-icons/bs"
 
@@ -28,13 +28,15 @@ const RoverCard = (props) => {
         <RInfoSection>
             <RName>{props.rname}</RName>
             <RDate>{props.rdate}</RDate>
-            <Rdivider></Rdivider>
+            <Rdivider/>
             <RDescription>{props.rdesc}</RDescription>
-            <PlayButton onClick={play}>
-              <BsIcons.BsPlayCircle size={30} />        
-            </PlayButton>
+           
+            
             <RPlayDescription>{props.playDescription}</RPlayDescription>
         </RInfoSection>
+        <PlayButton onClick={play}>
+              <BsIcons.BsPlayCircle size={30} />        
+            </PlayButton>
         
         {transform ?<RPhoto src={props.rphoto}/>:<RPhoto2 src={props.rphoto}/>}
        
