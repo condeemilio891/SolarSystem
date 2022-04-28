@@ -30,6 +30,15 @@ export const Rdivider=styled.div `
     top:190px;
 
 `
+export const Rdivider2=styled.div `
+    background-color:#949594;
+    height:50px;
+    width: 1.5px;
+    position:absolute;
+    bottom:1%;
+    left:15%;
+
+`
 
 
 export const RName= styled.h1`
@@ -128,6 +137,7 @@ cursor:pointer;
 export const RPlayDescription=styled.p`
 
 position:absolute;
+
     bottom:2%;
     font-weight:bolder ;
     color:#949594;
@@ -137,5 +147,6 @@ position:absolute;
     font-style:italic ;
     margin-right:2px;
     margin-left:10px;
+    padding-left:15px;
 `
 

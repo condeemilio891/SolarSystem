@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row'
 import "./style.css"
 import PerseveranceEssay from "../../assets/Music/PerseveranceEssay.mp4"
 import ingenuityEssay from "../../assets/Music/ingenuityEssay.mp4"
+import Tabs from "../../components/Tabs/Tab"
 
 const MarsWeather = () => {
 
@@ -21,12 +22,9 @@ const MarsWeather = () => {
       </video>
 
 
-       
+      
         <Row id='ingenuityRow'>
-            <iframe src='https://mars.nasa.gov/layout/embed/image/m20weather/'
-            class="nasaIframe" scrolling='no' frameborder='0' allowfullscreen 
-            ></iframe>
-
+             
              <RoverCard rname="Perseverance" rdate="Landed: February 2021" 
         rdesc="Launched by Mars 2020 mission. Landed on Mars to look for signs of life and record what
         challenges humans may have should they live there."
@@ -36,19 +34,14 @@ const MarsWeather = () => {
         />
 
          <RoverCard rname="Ingenuity" rdate="Landed: February 2021" 
-        rdesc="Launched by Mars 2020 mission. Landed on Mars to look for signs of life and record what
-        challenges humans may have should they live there."
+        rdesc="Helicopter that Launched alongside Perseverance. Mission: to survey area for exploration by Perseverance."
         rphoto={ingenuityImg}
         playDescription="From Vaneeza Rupani's essay which inspired the name ingenuity"
         sound={ingenuityEssay}/>
         </Row>
-        {/* <Row>
-            <iframe src='https://mars.nasa.gov/layout/embed/image/mslweather/' width='800' height='530'  
-            scrolling='no' frameborder='0'></iframe>
-        </Row>
         <Row>
-            <iframe src='https://mars.nasa.gov/layout/embed/image/insightweather/' width='800' height='530'  scrolling='no' frameborder='0'></iframe>
-        </Row> */}
+          <Tabs/>
+       </Row>
     </Container>
     </>
   )
