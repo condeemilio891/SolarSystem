@@ -1,4 +1,4 @@
-import react, {useState} from 'react'
+import React, {useState} from 'react'
 import "./style.css"
 
 
@@ -30,7 +30,7 @@ function Tabs(){
             
             <hr/>
             <iframe className="nasaIframe" src='https://mars.nasa.gov/layout/embed/image/m20weather/'
-             scrolling='no' frameborder='0' allowfullscreen height="250rem" width="300rem"
+             scrolling='no' frameborder='0' allowfullscreen height="300rem" width="300rem"
             ></iframe>
         </div>
         <div className={toggleTab===2 ?'content active-content':'content'} >
