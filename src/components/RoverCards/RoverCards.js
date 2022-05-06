@@ -8,7 +8,10 @@ const RoverCard = (props) => {
 
    const [transform,setTransform]= useState(true);
    const [buttonText,setButtonText]= useState(true);
-  const[play]=useSound(props.sound)
+   const [playIcon,setPlayIcon]=useState(true);
+  const[play, {stop, isPlaying}]=useSound(props.sound);
+ 
+
    const toggle=()=>{
 
     console.log("working")
@@ -16,8 +19,12 @@ const RoverCard = (props) => {
      setButtonText(!buttonText)
    }
 
-   
 
+   const togglePlayIcon=()=>{
+     setPlayIcon(!playIcon);
+   
+      
+    };
 
   return (
     <RCard>
@@ -34,10 +41,12 @@ const RoverCard = (props) => {
             
             <RPlayDescription>{props.playDescription}</RPlayDescription>
         </RInfoSection>
-        <PlayButton onClick={play}>
-              <BsIcons.BsPlayCircle size={30} />        
+        <PlayButton onClick={togglePlayIcon} >
+        {playIcon ? <BsIcons.BsPlayCircle size={30} onClick={play}/>:<BsIcons.BsPauseCircle size={30} onClick={()=>stop()} /> } 
+       
+            
             </PlayButton>
-        
+            
         {transform ?<RPhoto src={props.rphoto}/>:<RPhoto2 src={props.rphoto}/>}
        
       
