@@ -12,24 +12,24 @@ class Mars extends React.Component{
     state = {weatherMax:''}
     state ={weatherMin:''}
     
-      componentDidMount(){
-        fetch("https://api.maas2.jiinxt.com/"  )
-        .then(res=>res.json())
+      // componentDidMount(){
+      //   fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&sol=1000"  )
+      //   .then(res=>res.json())
         
-        .then(
-          (result)=>
-          console.log(result.max_temp),
-          // console.log(result)
-          // {
+      //   .then(
+      //     (result)=>
+      //     console.log(result),
+        //   console.log(result)
+        //   {
                   
-          //   this.setState({
-          //     weatherMax:result.max_temp,
-          //     weatherMin:result.min_temp
+        //     this.setState({
+        //       weatherMax:result.max_temp,
+        //       weatherMin:result.min_temp
               
-          //   })
-          // }
-        )
-      }
+        //     })
+        //   }
+      //   )
+      // }
 
   render(){
     const { showing,weatherMax,weatherMin } = this.state;

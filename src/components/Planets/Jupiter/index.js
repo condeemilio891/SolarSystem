@@ -3,11 +3,19 @@ import GlassCard from "../../GlassCard"
 import "./style.css"
 import { faXmarkSquare } from "@fortawesome/free-solid-svg-icons"
 import Zeus from "../../../assets/Images/Zeus.jpg"
-
+import SelectSound from "../../../assets/Music/SelectSciFiBeep.wav"
 
 class Jupiter extends React.Component{
     
     state ={showing:false}
+
+    sound=new Audio(SelectSound)
+    
+    toggleSound=()=>{
+      this.sound.play();
+      
+    }
+
   render(){
     const { showing } = this.state;
 return(
@@ -16,7 +24,8 @@ return(
     <>
 <div class="jupiter">
     
-    <div onClick={() => this.setState({ showing: !showing })} ></div>
+    <div onClick={() => this.setState({ showing: !showing })}
+          onMouseEnter={this.toggleSound} ></div>
   
 </div>
 

@@ -2,6 +2,8 @@ import React,{useState} from 'react'
 import {useSpring, animated} from "react-spring"
 import { ListGroupBody, ListGroup,ListGroupItem,PlanetImg,PlanetDescription,PlanetTitle,ProductContainer,PlanetFact, PlanetDescriptionDiv } from './GlassCardElements'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import useSound from 'use-sound';
+import ExitIconSound from "../../assets/Music/ExitIconSound.wav"
 import "./style.css"
 
 
@@ -12,10 +14,14 @@ const trans = (x, y, s) => `perspective(6000px) rotateX(${x}deg) rotateY(${y}deg
 const GlassCard = (props) => {
     const [aprops, set]= useSpring(()=>({xys:[0,0,1], config:{mass:10, tension:50, friction:50}}))
 
- const[isOpen, setIsOpen]=useState(true)
+    const[isOpen, setIsOpen]=useState(true)
+    
+    const [playExitSound]=useSound(ExitIconSound)
+
 
   const toggle=()=>{
-      setIsOpen(!isOpen)
+      setIsOpen(!isOpen);
+      playExitSound()
   }
     return (
         <>
