@@ -26,3 +26,14 @@ export const RoverText=styled.p`
     color:white;
 
 `
+
+export const curiosityRoverAPIImage= styled.img`
+        width: 50%;
+        height: 50%;
+        border: 3px solid #000;
+       
+        /* position:absolute;
+        top:5%;
+        left:0; */
+
+`

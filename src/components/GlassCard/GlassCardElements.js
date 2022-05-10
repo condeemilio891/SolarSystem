@@ -23,11 +23,12 @@ export const ProductContainer= styled(animated.div)`
   margin-top:8em;
    opacity: ${({isOpen})=>(isOpen ? '100%' :'0')};
     /* if is open is true show if not hide */
-    /* top:${({isOpen})=>(isOpen? '0':'-100%')}; */
+    top:${({isOpen})=>(isOpen? '0':'-1000%')};
     display:${({isOpen})=>(isOpen? 'inline-block':'none')};
+    z-index:${({isOpen})=>(isOpen? 1 : 0)} ;
 
   
-@media screen and (max-width: 500px){
+@media screen and (max-width: 900px){
    padding:1rem;
    /* align-items: flex-start;
    justify-content: left; */
@@ -72,12 +73,13 @@ export const PlanetDescription = styled.h3`
     left:45%;
     color: white;
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 900px){
       line-height:1.7 ;
       font-size:15px;
       top:50%;
       left:5%;
       padding-right:20%;
+      padding-top:1rem;
      
 
     }
@@ -95,8 +97,9 @@ export const PlanetImg = styled.img`
         &:hover{
            transform:scale(1.2)
         }
-        @media (max-width:800px){
+        @media (max-width:900px){
            top:40%;
+           left:10%;
            
         }
     

@@ -10,12 +10,14 @@
     height:"20rem";
 } */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     .NasaPlanet {
       display: none;
     }
     .reactiveXButton{
-      left:0;
+      left:3%;
+      position:static;
       cursor: pointer;
+      z-index: 3;
     }
   }
