@@ -6,6 +6,7 @@ import ingenuityImg from "../../assets/Images/IngenuityHeli.webp"
 import RoverCard from "../../components/RoverCards/RoverCards"
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
+import Carousel from 'react-bootstrap/Carousel'
 import "./style.css"
 import { curiosityRoverAPIImage } from './MarsWeatherElements'
 import PerseveranceEssay from "../../assets/Music/PerseveranceEssay.mp4"
@@ -29,7 +30,7 @@ const MarsWeather = () => {
   // };
 
 
-  // const [curiosityAPIPic,setCuriosityAPIPic]= useState("")
+  // const [curiosityAPIPic,setCuriosityAPIPic]= useState('')
 
   //  useEffect(()=>{
   //   getMarsImages();
@@ -39,7 +40,7 @@ const MarsWeather = () => {
   //   axios 
   //     .get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&sol=1000`)
   //     .then((res)=>{
-  //     setCuriosityAPIPic(res.data.photos[1].img_src);
+  //     setCuriosityAPIPic(res.data.photos[0].imgsrc);
   //     console.log(curiosityAPIPic);
   //     })
       
@@ -54,7 +55,7 @@ const MarsWeather = () => {
       </video>
 
 
-      
+      {/* first row of Cards */}
         <Row id='ingenuityRow'>
              
              <RoverCard rname="Perseverance" rdate="Landed: February 2021" 
@@ -71,9 +72,11 @@ const MarsWeather = () => {
         playDescription="From Vaneeza Rupani's essay which inspired Ingenuity"
         sound={ingenuityEssay}/>
         </Row>
+        {/* Weather Tabs */}
         <Row>
           <Tabs/>
        </Row>
+       {/* 2nd Row of cards */}
        <Row id='ingenuityRow'>
        <RoverCard rname="Curiosity" rdate="Landed: Saturday, November 26 2011" 
         rdesc="Helicopter that Launched alongside Perseverance. Mission: to survey area for exploration by Perseverance."
@@ -86,9 +89,9 @@ const MarsWeather = () => {
         playDescription="Curiosity Touchdown Confirmed"
         sound={curiosityLanding}/>
        </Row>
-       <Row>
-         {/* <curiosityRoverAPIImage src={curiosityAPIPic} ></curiosityRoverAPIImage> */}
-       </Row>
+        {/* Carousel */}
+
+       
     </Container>
     </>
   )

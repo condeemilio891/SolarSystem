@@ -5,6 +5,7 @@ import DwarfPlanets from "./pages/DwarfPlanets";
 import Sidebar from "./components/SideBar/Navbar";
 import Canvas from "./components/Canvas/Canvas";
 import MarsWeather from "./pages/MarsWeather/MarsWeather";
+import TestPage from "./pages/TestPage"
 
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route path= "dwarf" element={<DwarfPlanets/>}/>
           {/* <Route path="canvas" element={<Canvas/>}/> */}
           <Route path="marsweather" element={<MarsWeather/>} />
+          <Route path= "test" element={<TestPage/>}/>
        </Routes>
     </BrowserRouter>
     </>
