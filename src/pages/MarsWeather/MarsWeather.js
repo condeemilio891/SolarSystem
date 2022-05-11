@@ -1,12 +1,12 @@
 import React, {useEffect,useState} from 'react'
-import axios from "axios"
+
+import CuriosityCarousel from '../../components/Carousel/CuriosityCarousel'
 import marsVideo from "../../assets/Videos/marsBackgroundVid.mp4"
 import PerseveranceRoverImg from "../../assets/Images/PerseveranceRover.jpg"
 import ingenuityImg from "../../assets/Images/IngenuityHeli.webp" 
 import RoverCard from "../../components/RoverCards/RoverCards"
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Carousel from 'react-bootstrap/Carousel'
 import "./style.css"
 import { curiosityRoverAPIImage } from './MarsWeatherElements'
 import PerseveranceEssay from "../../assets/Music/PerseveranceEssay.mp4"
@@ -18,33 +18,6 @@ import ZhurongRover from "../../assets/Images/zhurongRover.jpg"
 
 const MarsWeather = () => {
 
-  // useEffect(()=>{
-  //   getMarsImages();
-  // },[]);
-
-  // const getMarsImages= () =>{
-  //   axios 
-  //     .get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&sol=1000`)
-  //     .then((res)=>console.log(res.data.photos))
-  //     // .catch((err)=>console.error(err));
-  // };
-
-
-  // const [curiosityAPIPic,setCuriosityAPIPic]= useState('')
-
-  //  useEffect(()=>{
-  //   getMarsImages();
-  // },[]);
-
-  // const getMarsImages= () =>{
-  //   axios 
-  //     .get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&sol=1000`)
-  //     .then((res)=>{
-  //     setCuriosityAPIPic(res.data.photos[0].imgsrc);
-  //     console.log(curiosityAPIPic);
-  //     })
-      
-  // };
 
   return (
     <>
@@ -90,7 +63,9 @@ const MarsWeather = () => {
         sound={curiosityLanding}/>
        </Row>
         {/* Carousel */}
-
+        <Row>
+          <CuriosityCarousel/>
+        </Row>
        
     </Container>
     </>
