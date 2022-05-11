@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, {useState } from 'react'
+
 import useSound from 'use-sound'
 import { RCard,RPhoto,RInfoSection,RName,RDate,Rdivider,RDescription, RButton, RPhoto2,PlayButton,RPlayDescription, Rdivider2
  } from './RoverCardElements'
@@ -23,7 +24,6 @@ const RoverCard = (props) => {
    const togglePlayIcon=()=>{
      setPlayIcon(!playIcon);
    
-      
     };
 
   return (
