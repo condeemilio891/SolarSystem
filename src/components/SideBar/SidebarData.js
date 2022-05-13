@@ -19,7 +19,7 @@ export const SideBarData=[
         cName:'nav-text'
     },
     {
-        title:'Mars Weather',
+        title:'Mars Rover Reports',
         path:'/marsweather',
         icon:<FaIcons.FaMars/>,
         cName:'nav-text'
