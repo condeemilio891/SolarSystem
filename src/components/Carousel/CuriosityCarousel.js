@@ -4,6 +4,7 @@ import axios from "axios"
 import Image from 'react-bootstrap/Image'
 
 
+
 function CuriosityCarousel() {
 
       const [curiosityAPIPic,setCuriosityAPIPic]= useState("")
@@ -19,7 +20,7 @@ function CuriosityCarousel() {
         
             axios 
             .get(`https://mars-photos.herokuapp.com/api/v1/rovers/curiosity/latest_photos?api_key=
-            4PRLKGVWcZiAclImDlk76LPTX9aKDSWwycCnhwLo`)
+            ${process.env.NASA_API_KEY}`)
     
     //    setResponded(true)
         //  .then((res)=>res.json())

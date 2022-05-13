@@ -19,7 +19,7 @@ function PerseveranceCarousel() {
         
             axios 
             .get(`https://mars-photos.herokuapp.com/api/v1/rovers/perseverance/latest_photos?api_key=
-            4PRLKGVWcZiAclImDlk76LPTX9aKDSWwycCnhwLo`)
+            ${process.env.NASA_API_KEY}`)
     
     //    setResponded(true)
         //  .then((res)=>res.json())
