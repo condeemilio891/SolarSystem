@@ -4,9 +4,10 @@ import { animated} from "react-spring"
 
 export const ProductContainer= styled(animated.div)`
    position:absolute;
-  display: inline-block;
-  height:10rem;
-  width:40rem;
+  display: flex;
+  min-height:80%;
+  max-height:80rem;
+  width:50%;
   padding: 9.5em;
   background: #C7D2FE66;
   border-radius: 10px;
@@ -15,21 +16,27 @@ export const ProductContainer= styled(animated.div)`
   backdrop-filter: opacity(20%);
   border: 2px solid transparent;
   background-clip:border-box;
-  cursor:pointer;
+  cursor:default;
   margin-right:10px;
   margin-left:10px;
   margin-bottom: 15px;
   margin-top:8em;
    opacity: ${({isOpen})=>(isOpen ? '100%' :'0')};
     /* if is open is true show if not hide */
-    /* top:${({isOpen})=>(isOpen? '0':'-100%')}; */
+    top:${({isOpen})=>(isOpen? '0':'-1000%')};
     display:${({isOpen})=>(isOpen? 'inline-block':'none')};
+    z-index:${({isOpen})=>(isOpen? 1 : 0)} ;
 
   
-@media screen and (max-width: 480px){
+@media screen and (max-width: 900px){
    padding:1rem;
-   align-items: flex-start;
-   justify-content: left;
+   /* align-items: flex-start;
+   justify-content: left; */
+   display:flex;
+   flex-wrap:wrap;
+
+   width:100%;
+   height:80rem !important;
 };
 `
 
@@ -50,6 +57,13 @@ export const PlanetTitle = styled.h1`
 
 
 `
+
+export const PlanetDescriptionDiv= styled.div`
+   height: auto;
+   width: auto;
+   
+`
+
 export const PlanetDescription = styled.h3`
     line-height: 1.3;
     letter-spacing: 1.15;
@@ -58,6 +72,17 @@ export const PlanetDescription = styled.h3`
     position: absolute;
     left:45%;
     color: white;
+
+    @media screen and (max-width: 900px){
+      line-height:1.7 ;
+      font-size:15px;
+      top:50%;
+      left:5%;
+      padding-right:20%;
+      padding-top:1rem;
+     
+
+    }
 
 `
 
@@ -72,6 +97,11 @@ export const PlanetImg = styled.img`
         &:hover{
            transform:scale(1.2)
         }
+        @media (max-width:900px){
+           top:40%;
+           left:10%;
+           
+        }
     
     `
     export const ListGroupBody= styled.body `
@@ -84,6 +114,9 @@ export const PlanetImg = styled.img`
     left: 4.5rem;
     width:20rem;
     height:10rem;
+    background:none;
+
+  
     `
     
     export const ListGroup = styled.ul` 
@@ -93,6 +126,7 @@ export const PlanetImg = styled.img`
     margin: 100px auto 0;
     padding: 10px;
     box-sizing: border-box;
+ 
     `
     
     export const ListGroupItem=styled.li` 
@@ -131,7 +165,8 @@ export const PlanetImg = styled.img`
           background: #D7C0AD;
        };
        &:hover{
-           transform: scale()(1.06);
+           transform: scale(1.06);
            background: #fff0f3;
+           color:black;
        }
     `

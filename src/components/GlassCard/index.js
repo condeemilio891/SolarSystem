@@ -1,8 +1,10 @@
 import React,{useState} from 'react'
 import {useSpring, animated} from "react-spring"
-import { ListGroupBody, ListGroup,ListGroupItem,PlanetImg,PlanetDescription,PlanetTitle,ProductContainer,PlanetFact } from './GlassCardElements'
+import { ListGroupBody, ListGroup,ListGroupItem,PlanetImg,PlanetDescription,PlanetTitle,ProductContainer,PlanetFact, PlanetDescriptionDiv } from './GlassCardElements'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import useSound from 'use-sound';
+import ExitIconSound from "../../assets/Music/ExitIconSound.wav"
+import "./style.css"
 
 
 
@@ -12,10 +14,14 @@ const trans = (x, y, s) => `perspective(6000px) rotateX(${x}deg) rotateY(${y}deg
 const GlassCard = (props) => {
     const [aprops, set]= useSpring(()=>({xys:[0,0,1], config:{mass:10, tension:50, friction:50}}))
 
- const[isOpen, setIsOpen]=useState(true)
+    const[isOpen, setIsOpen]=useState(true)
+    
+    const [playExitSound]=useSound(ExitIconSound)
+
 
   const toggle=()=>{
-      setIsOpen(!isOpen)
+      setIsOpen(!isOpen);
+      playExitSound()
   }
     return (
         <>
@@ -29,11 +35,11 @@ const GlassCard = (props) => {
        
            
             <PlanetTitle>{props.title}</PlanetTitle>
-            <FontAwesomeIcon size= "2x"style={{position:'absolute', top:0, right:0,color:"#1a2c80"}} icon={props.Xbutton} 
+            <FontAwesomeIcon className='reactiveXButton' size= "2x"style={{position:'absolute', top:0, right:0,color:"#1a2c80", cursor:'pointer'}} icon={props.Xbutton} 
              onClick={toggle}
             
             />
-            <FontAwesomeIcon size= "6x" style={{position:'absolute', top:"1", left:"50%",color:"#1a2c80"}} icon={props.icon} />
+            <FontAwesomeIcon size= "6x" style={{position:'absolute', top:"1", left:"50%",color:"#1a2c80", }} icon={props.icon} />
             <ListGroupBody>
                 <ListGroup>
                     <ListGroupItem>
@@ -56,13 +62,19 @@ const GlassCard = (props) => {
                     </ListGroupItem>
                 </ListGroup>
             </ListGroupBody>
+            <PlanetDescriptionDiv>
             <PlanetDescription>{props.description}</PlanetDescription>
-
+            </PlanetDescriptionDiv>
             <PlanetImg src={props.planetImage}/>
-            <iframe style={{
-                position:'absolute', 
-                zIndex:1,borderRadius:"50%",
-                left:"100%",height:"25rem"}} src={props.nasaImage}></iframe>
+            <iframe class="NasaPlanet" 
+            style={{   position:'absolute',
+            zIndex:1,
+            borderRadius:"50%",
+            left:"65%",
+            bottom:"80%",
+            height:"10rem",
+            width:'8rem',}} 
+            src={props.nasaImage}></iframe>
         </ProductContainer>
 
 

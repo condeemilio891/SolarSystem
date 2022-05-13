@@ -1,0 +1,23 @@
+
+/* 
+.NasaPlanet{
+
+    position:'absolute';
+    z-index:1;
+    border-radius:"50%";
+    left:"10%";
+    bottom:"1%";
+    height:"20rem";
+} */
+
+@media screen and (max-width: 950px) {
+    .NasaPlanet {
+      display: none;
+    }
+    .reactiveXButton{
+      left:3%;
+      position:static;
+      cursor: pointer;
+      z-index: 3;
+    }
+  }
