@@ -4,78 +4,67 @@ import axios from "axios"
 import Image from 'react-bootstrap/Image'
 
 
-const CuriosityCarousel = () => {
+function CuriosityCarousel() {
 
-      const [curiosityAPIPic,setCuriosityAPIPic]= useState('')
+      const [curiosityAPIPic,setCuriosityAPIPic]= useState("")
     
-        const [responded,setResponded]=useState(false)
+        // const [responded,setResponded]=useState(true)
 
-const fetchMarsAPIData= ()=>{
-      axios 
-      .get(`https://mars-photos.herokuapp.com/api/v1/rovers/curiosity/latest_photos?api_key=DEMO_KEY`)
-     
-      .then((res)=>{
-        setCuriosityAPIPic(res.data.latest_photos);
-      console.log(curiosityAPIPic);
-      localStorage.setItem('APIMARSDATA','yoyo')
-       })
-       
-       .catch(error=> console.error(`Error:${error} `));
-      
 
-}
+    
+
   useEffect(()=>{
-
- 
-      const getMarsAPIData=async()=>{
-    await fetchMarsAPIData()};
-
-        getMarsAPIData();
-      
-    //   return()=>{
-    //     //   this now gets called when the comp unmounts
-    //   }
+    
+    
+        
+            axios 
+            .get(`https://mars-photos.herokuapp.com/api/v1/rovers/curiosity/latest_photos?api_key=
+            4PRLKGVWcZiAclImDlk76LPTX9aKDSWwycCnhwLo`)
+    
+    //    setResponded(true)
+        //  .then((res)=>res.json())
+         .then(res=>{
+          setCuriosityAPIPic(res.data.latest_photos);
+        
+        console.log(curiosityAPIPic);
+       
+         })
+         .catch(error=>console.log(error))
+        
+        
    
   },[]);
 
-  if(curiosityAPIPic!=''){
+ 
   return (
-     
-      <>
-
     
+      <>
     <Carousel>
     {[...Array(20)].map((elementInArray, index) => ( 
    
         <CarouselItem>
+          
             <ul>
-                <li>Picture Taken on Sol {curiosityAPIPic[50+index].sol} </li>
-                <li>Picture taken by the {curiosityAPIPic[50+index].camera.full_name} 
-                    {curiosityAPIPic[50+index].camera.name} </li>
-                <li>Taken on {curiosityAPIPic[50+index].earth_date}</li> 
+            <h1>Latest Rover Mars Photos</h1>
+            <h6>Brought to you by NASA Mars Photo API</h6>
+               
+                <li>Latest Picture on the rover {curiosityAPIPic[1 + index]?.rover.name}</li>
+                <li>Picture Taken on Sol {curiosityAPIPic[1+index]?.sol} of mission </li>
+                <li>Picture taken by the {curiosityAPIPic[1+index]?.camera?.full_name}__
+                    {curiosityAPIPic[1+index]?.camera.name} </li>
+                <li>Taken on {curiosityAPIPic[1+index]?.earth_date}</li> 
+                <li>Page {index +1}</li>
             </ul>
-            <Image src={curiosityAPIPic[50+index].img_src} height="200px"/>
+            <Image src={curiosityAPIPic[1+index]?.img_src} height="200px"/>
             
         </CarouselItem>
-        
-        
-
     ) 
 )}
     </Carousel>
-    
-   
-
     </>
-  )
-    } else {
-        return(
+    
+    )
 
-            <Carousel>
-                <CarouselItem>Loading please Wait</CarouselItem>
-            </Carousel>
-        )
-    }
 }
 
 export default CuriosityCarousel
