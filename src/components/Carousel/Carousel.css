@@ -18,12 +18,15 @@
 }
 
 .indicators{
+    position: relative;
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 
 .indicators >button{
     margin:5px;
+
 }
 
 .indicators > button.active{
