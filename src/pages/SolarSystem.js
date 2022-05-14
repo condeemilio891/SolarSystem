@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import useSound from 'use-sound'
+import { FaUserAstronaut } from 'react-icons/fa'
 import Container from "react-bootstrap/Container";
 import Video from "../assets/Videos/spaceVid.mp4";
 import Earth from "../components/Planets/Earth";
@@ -61,7 +62,15 @@ function SolarSystem() {
        <video className="videoTag" autoPlay loop muted>
             <source src={Video} type="video/mp4" />
           </video>
-          <h1 className="peopleInSpaceli">People In space right now{peopleInSpace} </h1>
+          <h1 className="peopleInSpaceh1">People In  </h1>   
+          <h1 className="peopleInSpaceh1">Space Right Now </h1>
+          <h1 className="peopleInSpaceh1">by Astros API </h1>    
+          { peopleInSpace && peopleInSpace.map(({ name, craft }) => (
+            <div className="peopleInSpaceliCard">
+        <p key={name} className="peopleInSpaceli"><FaUserAstronaut/> {name} on the {craft} </p>
+        </div>
+      ))}
+              
           <Venus/>
           <Mercury/>
           <Earth />

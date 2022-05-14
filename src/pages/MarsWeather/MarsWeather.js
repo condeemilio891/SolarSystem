@@ -8,7 +8,7 @@ import RoverCard from "../../components/RoverCards/RoverCards"
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import "./style.css"
-import { curiosityRoverAPIImage } from './MarsWeatherElements'
+import { curiosityRoverAPIImage, RoverText } from './MarsWeatherElements'
 import PerseveranceEssay from "../../assets/Music/PerseveranceEssay.mp4"
 import ingenuityEssay from "../../assets/Music/ingenuityEssay.mp4"
 import Tabs from "../../components/Tabs/Tab"
@@ -30,13 +30,14 @@ const MarsWeather = () => {
 
       </video>
       {/* search carousel */}
-
+      
+      <Row>
+      <RoverText>Search Photos by Sol of Curiosity's Mission</RoverText>
       <MarsPhotoSearch/>
+      </Row>
 
       {/* Carousel */}
-      <Row>
-          <PerseveranceCarousel/>
-        </Row>
+    
 
       {/* first row of Cards */}
         <Row id='ingenuityRow'>
@@ -81,9 +82,9 @@ const MarsWeather = () => {
         sound={curiosityLanding}/>
        </Row>
            {/* Weather Tabs */}
-        <Row>
-          <Tabs/>
-       </Row>
+           <Row>
+          <PerseveranceCarousel/>
+        </Row>
        <Row id='ingenuityRow'>
        <RoverCard rname="Spirit" rdate="Landed: Saturday, January 24 2004" 
         rdesc="Spirit found an anomalous rock composed of Magnesium and iron carbonates, suggesting that a warmer, wetter
@@ -98,7 +99,10 @@ const MarsWeather = () => {
         playDescription="Curiosity Touchdown Confirmed"
         sound={curiosityLanding}/>
        </Row>
-    
+       <Row>
+         <Tabs/>
+       </Row>
+
        
     </Container>
     </>

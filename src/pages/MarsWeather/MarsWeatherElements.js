@@ -24,6 +24,11 @@ export const RoverTextContainer=styled.div`
 
 export const RoverText=styled.p`
     color:white;
+    font-size: 2rem ;
+    text-align:center;
+    justify-content:center ;
+    z-index: 2;
+    position: relative ;
 
 `
 
