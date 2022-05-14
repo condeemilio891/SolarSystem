@@ -14,11 +14,21 @@ video {
     
   }
 
-  .peopleInSpaceli{
+  .peopleInSpaceh1{
       position: relative;
-      z-index: 2;
+      z-index: 0;
       justify-content: center;
       text-align: center;
-      height: 1000px;
-      color:white;
+      font-size: 3em;
+      font-weight: bold;
+      color:#a1251b;
   }
+  
+  .peopleInSpaceli{
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    color:white;
+}

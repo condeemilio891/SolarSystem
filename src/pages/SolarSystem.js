@@ -37,7 +37,7 @@ function SolarSystem() {
     setPeopleInSpace(res.data.people);
     setLoading(false)
   
-  console.log(res.data.people);
+  console.log(res.data.people[0]);
   
    })
    .catch(error => {
@@ -61,7 +61,11 @@ function SolarSystem() {
        <video className="videoTag" autoPlay loop muted>
             <source src={Video} type="video/mp4" />
           </video>
-          <h1 className="peopleInSpaceli">People In space right now{peopleInSpace} </h1>
+          <h1 className="peopleInSpaceh1">People In space right now </h1>   
+          {peopleInSpace.map(({ name, craft }) => (
+        <p key={name} className="peopleInSpaceli"> {name} in the {craft} </p>
+      ))}
+              
           <Venus/>
           <Mercury/>
           <Earth />
