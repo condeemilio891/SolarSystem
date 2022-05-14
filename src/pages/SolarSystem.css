@@ -13,3 +13,12 @@ video {
     background-repeat: repeat-y;
     
   }
+
+  .peopleInSpaceli{
+      position: relative;
+      z-index: 2;
+      justify-content: center;
+      text-align: center;
+      height: 1000px;
+      color:white;
+  }

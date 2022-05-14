@@ -12,6 +12,7 @@ import Uranus from "../components/Planets/Uranus"
 import Neptune from "../components/Planets/Neptune"
 import HelloFromEarth from "../assets/Music/EarthTitleSound.mp4"
 import "./SolarSystem.css"
+import axios from "axios";
 
 
 
@@ -19,35 +20,39 @@ import "./SolarSystem.css"
 function SolarSystem() {
   
 
-  // useEffect(()=> {
-  //   fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&sol=1000`,
-  //   {method:"GET"
-  //   })
-  // })
+ 
+  const [loading,setLoading]=useState(false)
+  const [peopleInSpace,setPeopleInSpace]=useState('')
+  
+  
 
-  //   .then(data=>data.json())
-  //   .then(
-  //     (result)=>
-  //     console.log(result),
+      const getPeopleInSpace=()=>{
+          setLoading(true);
+             
+      axios 
+      .get(`http://api.open-notify.org/astros.json`)
+  
+  
+   .then(res=>{
+    setPeopleInSpace(res.data.people);
+    setLoading(false)
+  
+  console.log(res.data.people);
+  
+   })
+   .catch(error => {
+      setLoading(false);
+      console.log("error", error);
+    });
+      }
 
-  //   [])
 
-    // componentDidMount(){
-    //   fetch("https://api.maas2.jiinxt.com/"  )
-    //   .then(res=>res.json())
-      
-    //   .then(
-    //     (result)=>
-    //     console.log(result.max_temp),
-    //     console.log(result)
-    //     {
-                
-    //       this.setState({
-    //         weatherMax:result.max_temp,
-    //         weatherMin:result.min_temp
-            
-    //       })
-    //     }
+  useEffect(()=>{
+   
+      getPeopleInSpace();
+  
+  },[]);
+
   
   return (
     
@@ -56,6 +61,7 @@ function SolarSystem() {
        <video className="videoTag" autoPlay loop muted>
             <source src={Video} type="video/mp4" />
           </video>
+          <h1 className="peopleInSpaceli">People In space right now{peopleInSpace} </h1>
           <Venus/>
           <Mercury/>
           <Earth />

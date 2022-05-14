@@ -38,7 +38,7 @@ const Carousel= ({children})=>{
                         updateIndex(activeIndex-1)
                     }}
                     >
-                        Prev Sol
+                        Prev
                 </button>
                 {React.Children.map(children,(child,index)=>{
                     return(
@@ -56,7 +56,7 @@ const Carousel= ({children})=>{
                         updateIndex(activeIndex+1)
                     }}
                     >
-                        Next Sol
+                        Next
                 </button>
             </div>
         </div>
