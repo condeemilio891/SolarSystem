@@ -18,17 +18,48 @@ video {
       position: relative;
       z-index: 0;
       justify-content: center;
-      text-align: center;
-      font-size: 3em;
+      text-align: right;
+      font-size: 1.3em;
       font-weight: bold;
-      color:#a1251b;
+      color:#a3aec4;
+      
+     
+      ;
   }
   
   .peopleInSpaceli{
-    position: relative;
+    position: absolute;
     z-index: 1;
     justify-content: center;
-    text-align: center;
+    text-align: right;
     font-size: 12px;
     color:white;
+    right:0;
+}
+
+.peopleInSpaceliCard{
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    position: relative;
+    width: 10.5%;
+    height: 4em;
+    justify-content:flex-end;
+    align-items: flex-end;
+    background-color: #3c2446;
+    text-align: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    right:0;
+    margin-left:90%;
+    border-top-left-radius: 80px 80px;
+    border-bottom-left-radius: 80px 80px ;
+}
+
+.peopleInSpaceliCard:hover{
+    background-color: #003b59;
+    box-shadow: 0px 15px 20px rgba(49,0,71);
+    color: black;
+    transform: translateY(-7px);
+
 }

@@ -55,6 +55,8 @@
 .curiosityInput{
     text-align: center;
     margin-top: 1rem;
+    z-index: 2;
+    position: relative;
 
 }
 .curiositySearchBtn{
