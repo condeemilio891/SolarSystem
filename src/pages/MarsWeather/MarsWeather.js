@@ -17,6 +17,7 @@ import curiosityLanding from "../../assets/Music/curiosityLanding.mp4"
 import OpportunityRoverPic from "../../assets/Images/opportunityRoverPic.jpg"
 import SpiritRoverPic from "../../assets/Images/spiritRoverPic.jpg"
 import ZhurongRover from "../../assets/Images/zhurongRover.jpg"
+import MarsPhotoSearch from '../../components/Carousel/MarsPhotoSearch'
 
 const MarsWeather = () => {
 
@@ -28,6 +29,9 @@ const MarsWeather = () => {
       <source src={marsVideo} type="video/mp4" />
 
       </video>
+      {/* search carousel */}
+
+      <MarsPhotoSearch/>
 
       {/* Carousel */}
       <Row>
