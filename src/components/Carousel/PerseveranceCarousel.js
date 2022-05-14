@@ -8,18 +8,11 @@ function PerseveranceCarousel() {
 
     const [perseveranceAPIPic,setPerseveranceAPIPic]= useState("")
     
-     
-
-
-    
-
   useEffect(()=>{
-    
-    
         
             axios 
             .get(`https://mars-photos.herokuapp.com/api/v1/rovers/perseverance/latest_photos?api_key=
-            ${process.env.NASA_API_KEY}`)
+            ${process.env.REACT_APP_NASA_API_KEY}`)
     
     //    setResponded(true)
         //  .then((res)=>res.json())
@@ -45,7 +38,7 @@ function PerseveranceCarousel() {
         <CarouselItem>
           
             <ul>
-            <h1>Latest Rover Mars Photos</h1>
+            <h1>Latest Perseverance Mars Photos</h1>
             <h6>Brought to you by NASA Mars Photo API</h6>
                
                 <li>Picture Taken by Rover {perseveranceAPIPic[1 + index]?.rover.name}</li>
