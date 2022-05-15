@@ -48,7 +48,7 @@ function PerseveranceCarousel() {
                 <li>Taken on {perseveranceAPIPic[1+index]?.earth_date}</li> 
                 <li>Page {index +1}</li>
             </ul>
-            <Image src={perseveranceAPIPic[1+index]?.img_src} height="200px"/>
+            <Image src={perseveranceAPIPic[1+index]?.img_src} height="200px" alt = "no data right now"/>
             
         </CarouselItem>
     ) 
