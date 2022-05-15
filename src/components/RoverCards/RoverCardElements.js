@@ -11,6 +11,7 @@ export const RCard = styled.div`
     transform:scale(0.7);
     border-radius:8px;
     box-shadow: 0 0 80px 1px #4169b0;
+    
 `
 
 

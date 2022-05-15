@@ -52,13 +52,14 @@ const MarsPhotoSearch = () => {
     <>
     {loading ? <p>loading</p> : <Carousel>
 
-{[...Array(20)].map((elementInArray, index) => ( 
+{[...Array(50)].map((elementInArray, index) => ( 
 
    <CarouselItem>
 
-   <ul>
-      <h1>Curiosity Pictures Taken on sol {curiosityPictureData[1+index]?.sol}</h1>
-      <h6>Brought to you by NASA Mars Photo API </h6>
+   <ul className='carouselul'>
+      <h1 className='carouselTitle'>Curiosity Pictures</h1>
+      <h5 className='carouselTitle'>Taken on sol {curiosityPictureData[1+index]?.sol}</h5>
+      <h6 className='carouselTitle' > Brought to you by NASA Mars Photo API </h6>
          
           <li>Picture Taken by Rover {curiosityPictureData[1 + index]?.rover.name}</li>
           <li>Picture taken by the {curiosityPictureData[1+index]?.camera?.full_name}__
