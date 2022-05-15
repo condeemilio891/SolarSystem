@@ -19,7 +19,7 @@ function PerseveranceCarousel() {
          .then(res=>{
           setPerseveranceAPIPic(res.data.latest_photos);
       
-        console.log(perseveranceAPIPic);
+       
        
          })
          .catch(error=>console.log(error))
@@ -33,13 +33,13 @@ function PerseveranceCarousel() {
     
       <>
     <Carousel>
-    {[...Array(20)].map((elementInArray, index) => ( 
+    {[...Array(50)].map((elementInArray, index) => ( 
    
         <CarouselItem>
           
-            <ul>
-            <h1>Latest Perseverance Mars Photos</h1>
-            <h6>Brought to you by NASA Mars Photo API</h6>
+            <ul className='carouselul'>
+            <h1 className='carouselTitle'>Latest Perseverance Mars Photos</h1>
+            <h6 className='carouselTitle'>Brought to you by NASA Mars Photo API</h6>
                
                 <li>Picture Taken by Rover {perseveranceAPIPic[1 + index]?.rover.name}</li>
                 <li>Picture Taken on Sol {perseveranceAPIPic[1+index]?.sol} of mission </li>
