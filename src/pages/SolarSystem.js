@@ -62,9 +62,9 @@ function SolarSystem() {
        <video className="videoTag" autoPlay loop muted>
             <source src={Video} type="video/mp4" />
           </video>
-          <h1 className="peopleInSpaceh1">People In  </h1>   
+          {/* <h1 className="peopleInSpaceh1">People In  </h1>   
           <h1 className="peopleInSpaceh1">Space Right Now </h1>
-          <h1 className="peopleInSpaceh1">by Astros API </h1>    
+          <h1 className="peopleInSpaceh1">by Astros API </h1>     */}
           { peopleInSpace && peopleInSpace.map(({ name, craft }) => (
             <div className="peopleInSpaceliCard">
         <p key={name} className="peopleInSpaceli"><FaUserAstronaut/> {name} on the {craft} </p>

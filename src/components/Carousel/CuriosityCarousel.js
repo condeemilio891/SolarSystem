@@ -25,7 +25,7 @@ function CuriosityCarousel() {
          .then(res=>{
           setCuriosityAPIPic(res.data.latest_photos);
         
-        console.log(curiosityAPIPic);
+
        
          })
          .catch(error=>console.log(error))
@@ -39,14 +39,13 @@ function CuriosityCarousel() {
     
       <>
     <Carousel>
-    {[...Array(20)].map((elementInArray, index) => ( 
+    {[...Array(50)].map((elementInArray, index) => ( 
    
         <CarouselItem>
           
-            <ul>
-            <h1>Latest Curiosity Rover Mars Photos</h1>
-            <h6>Brought to you by NASA Mars Photo API</h6>
-               
+            <ul className="carouselul">
+            <h1 className='carouselTitle'>Latest Curiosity Rover Mars Photos</h1>
+            <h6 className='carouselTitle'>Brought to you by NASA Mars Photo API</h6>
                 <li>Latest Picture on the rover {curiosityAPIPic[1 + index]?.rover.name}</li>
                 <li>Picture Taken on Sol {curiosityAPIPic[1+index]?.sol} of mission </li>
                 <li>Picture taken by the {curiosityAPIPic[1+index]?.camera?.full_name}__
@@ -54,7 +53,7 @@ function CuriosityCarousel() {
                 <li>Taken on {curiosityAPIPic[1+index]?.earth_date}</li> 
                 <li>Page {index +1}</li>
             </ul>
-            <Image src={curiosityAPIPic[1+index]?.img_src} height="200px"/>
+            <Image className='carouselImage' src={curiosityAPIPic[1+index]?.img_src} height="200px" alt="No data right now"/>
             
         </CarouselItem>
     ) 

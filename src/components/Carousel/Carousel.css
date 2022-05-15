@@ -12,9 +12,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 400px;
     /* background-color: green; */
     color:#fff;
+    flex-wrap: wrap;
 }
 
 .indicators{
@@ -23,6 +24,8 @@
     justify-content: center;
     z-index: 2;
     cursor: pointer;
+    flex-wrap: wrap;
+    
 }
 
 .indicators >button{
@@ -31,6 +34,15 @@
     background-color: black;
     cursor: pointer;
     }
+
+    @media screen and (max-width: 480px){
+    .indicators >button{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+}
+
 
 .indicators > button.active{
     background-color: #a1251b;
@@ -74,4 +86,18 @@
   box-shadow: 0px 15px 20px rgba(49,0,71);
   color: #fff;
   transform: translateY(-7px);
+}
+
+.carouselTitle{
+    margin:5px 5px 5px 5px;
+}
+
+/* @media screen and (min-width: 480px){
+    .carouselul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+} */
+.carouselImage{
+    color:white;
 }
