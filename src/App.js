@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
     <Sidebar/>
       <Routes>
-          <Route path= "/solarsystem" element={<SolarSystem/>}/>
+          <Route path= "solarsystem" element={<SolarSystem/>}/>
           <Route path= "dwarf" element={<DwarfPlanets/>}/>
           {/* <Route path="canvas" element={<Canvas/>}/> */}
           <Route path="/" element={<MarsWeather/>} />
