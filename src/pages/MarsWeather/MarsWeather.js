@@ -33,7 +33,7 @@ const MarsWeather = () => {
       {/* search carousel */}
       
       <Row>
-      <RoverText>Search Photos by Sol of Curiosity's Mission</RoverText>
+      <RoverText>Search Photos by Rover and Sol</RoverText>
       <MarsPhotoSearch/>
       </Row>
 
