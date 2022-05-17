@@ -7,8 +7,8 @@ import * as BsIcons from "react-icons/bs"
 
 const RoverCard = (props) => {
 
-   const [transform,setTransform]= useState(true);
-   const [buttonText,setButtonText]= useState(true);
+   const [transform,setTransform]= useState(false);
+   const [buttonText,setButtonText]= useState(false);
    const [playIcon,setPlayIcon]=useState(true);
   const[play, {stop, isPlaying}]=useSound(props.sound);
  

@@ -91,6 +91,10 @@
 .carouselTitle{
     margin:5px 5px 5px 5px;
 }
+.carouselSolResult{
+    color:lightblue;
+}
+
 
 /* @media screen and (min-width: 480px){
     .carouselul{
@@ -100,4 +104,24 @@
 } */
 .carouselImage{
     color:white;
+}
+
+.curiositySearchPicture{ 
+    
+}
+
+
+.curiositySearchPicture:hover{
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 650px){
+    .curiositySearchPicture{
+        height: 200px;
+        
+    }
+    .curiositySearchPicture{
+        transform: scale(1.1);
+        
+    }
 }

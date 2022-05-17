@@ -29,6 +29,7 @@ export const RoverText=styled.p`
     justify-content:center ;
     z-index: 2;
     position: relative ;
+    margin-bottom:1px ;
 
 `
 
