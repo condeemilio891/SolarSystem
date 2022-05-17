@@ -8,7 +8,7 @@ export const SideBarData=[
 
     {
         title:'Planets',
-        path:'/',
+        path:'/solarsystem',
         icon: <RiIcons.RiSunFill/>,
         cName:'nav-text'
     },
@@ -20,7 +20,7 @@ export const SideBarData=[
     },
     {
         title:'Mars Rover Reports',
-        path:'/marsweather',
+        path:'/',
         icon:<FaIcons.FaMars/>,
         cName:'nav-text'
     },

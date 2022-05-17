@@ -53,7 +53,7 @@ function CuriosityCarousel() {
                 <li>Taken on {curiosityAPIPic[1+index]?.earth_date}</li> 
                 <li>Page {index +1}</li>
             </ul>
-            <Image className='carouselImage' src={curiosityAPIPic[1+index]?.img_src} height="200px" alt="No data right now"/>
+            <Image className='curiositySearchPicture' src={curiosityAPIPic[1+index]?.img_src} alt="No data right now"/>
             
         </CarouselItem>
     ) 

@@ -10,7 +10,7 @@ import './Carousel.css'
 
 const MarsPhotoSearch = () => {
 
-    const [search,setSearch]=useState('40')
+    const [search,setSearch]=useState('2550')
     const [loading,setLoading]=useState(false)
     const [curiosityPictureData,setCuriosityPictureData]=useState('')
     
@@ -50,6 +50,9 @@ const MarsPhotoSearch = () => {
       }
   return (
     <>
+
+
+
     {loading ? <p>loading</p> : <Carousel>
 
 {[...Array(50)].map((elementInArray, index) => ( 
@@ -58,7 +61,7 @@ const MarsPhotoSearch = () => {
 
    <ul className='carouselul'>
       <h1 className='carouselTitle'>Curiosity Pictures</h1>
-      <h5 className='carouselTitle'>Taken on sol {curiosityPictureData[1+index]?.sol}</h5>
+      <h5 className='carouselTitle' >Taken on sol <span className='carouselSolResult'>{curiosityPictureData[1+index]?.sol}</span></h5>
       <h6 className='carouselTitle' > Brought to you by NASA Mars Photo API </h6>
          
           <li>Picture Taken by Rover {curiosityPictureData[1 + index]?.rover.name}</li>
@@ -66,7 +69,7 @@ const MarsPhotoSearch = () => {
               {curiosityPictureData[1+index]?.camera.name} </li>
           <li>Taken on {curiosityPictureData[1+index]?.earth_date}</li> 
       </ul>
-      <Image src={curiosityPictureData[1+index]?.img_src} alt="No Data This Sol, Try another one" height="200px"/>
+      <Image className='curiositySearchPicture' src={curiosityPictureData[1+index]?.img_src} alt="No Data This Sol, Try another one"/>
 
    </CarouselItem>
 
@@ -74,7 +77,7 @@ const MarsPhotoSearch = () => {
 )}
 </Carousel>}
 
-     <div className="curiosityInput">
+<div className="curiosityInput">
         <input
           className="curiositySearchForm"
           type="text"
