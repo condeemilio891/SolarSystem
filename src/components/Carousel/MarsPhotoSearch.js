@@ -11,7 +11,7 @@ import './Carousel.css'
 
 const MarsPhotoSearch = () => {
 
-    const [search,setSearch]=useState('2550')
+    const [search,setSearch]=useState('333')
     const [loading,setLoading]=useState(false)
     const [curiosityPictureData,setCuriosityPictureData]=useState('')
     const [roverApi, setRoverApi]=useState('curiosity')
